@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  APay_User
+
+  Created by huangjinyang on 17/9/9.
+  Copyright © 2017年 jinx. All rights reserved.
+*/
+"My Wallet" = "Dompetku";
+"All your daily expenses with APay, your cashless and cardless life starts from TODAY." = "Pengeluaran harianmu tanpa kartu dan tanpa tunai dengan APay, dimulai HARI INI.";
+"The more you use, the more you save" = "Semakin sering kamu pakai, semakin banyak yang kamu simpan";
+"Secure, Reliable, Convenient No worries for losing your wallet anymore" = "Mudah, Aman, Terpercaya\nKehilangan uang? Ga takut lagi!";
+"Skip" = "Lewati";
+"Next" = "Berikutnya";
+"SIGN IN" = "MASUK";
+"Phone Number" = "Nomor Telepon";
+"Password" = "Kata Sandi";

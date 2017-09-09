@@ -1,0 +1,6 @@
+framework module Pods_APay_User {
+  umbrella header "Pods-APay_User-umbrella.h"
+
+  export *
+  module * { export * }
+}

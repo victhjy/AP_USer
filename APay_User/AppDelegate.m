@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "APWelcomeVC.h"
+#import "APLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    if ([APPManager share].firstLogin) {
+        self.window.rootViewController=[[APWelcomeVC alloc]init];
+    }
+    else{
+        self.window.rootViewController=[[APLoginViewController alloc]init];
+    }
+    
+    [self.window makeKeyWindow];
     return YES;
 }
 

@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  APay_User
+//
+//  Created by huangjinyang on 17/9/8.
+//  Copyright © 2017年 jinx. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <UIKit/UIKit.h>
+
+
+#import "APHeaders.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "YYModel.h"
+#import "UIImageView+WebCache.h"
+#import "NSObject+LKDBHelper.h"
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
