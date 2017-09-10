@@ -25,12 +25,29 @@
         self.window.rootViewController=[[APWelcomeVC alloc]init];
     }
     else{
-        self.window.rootViewController=[[APLoginViewController alloc]init];
+        UINavigationController *navVC=[[UINavigationController alloc]initWithRootViewController:[[APLoginViewController alloc]init]];
+        self.window.rootViewController=navVC;
     }
     
+    [self configNavigationBar];
     [self.window makeKeyWindow];
     return YES;
 }
+#pragma mark - config navigationBar
+-(void)configNavigationBar{
+    [[UINavigationBar appearance] setBarTintColor:ThemeColor];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName : [UIColor whiteColor]
+                                                           }];
+    [[UINavigationBar appearance] setShadowImage:[UIImage new]];
+    [[UIBarButtonItem appearance]
+     setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+     forBarMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -14,3 +14,11 @@
 "SIGN IN" = "MASUK";
 "Phone Number" = "Nomor Telepon";
 "Password" = "Kata Sandi";
+"Sign Up" = "Daftar";
+"Signing up means that you agree with" = "Dengan mendaftar, saya setuju dengan";
+"Our Terms of Service" = "Persyaratan Layanan Kami";
+"NEXT" = "LANJUT";
+"Input Phone Number" = "Masukkan Nomor Telepon";
+"Input your verification code" = "Masukkan kode verifickasi anda";
+"Resend Code" = "Kirim Ulang Kode";
+"Resend code in %lds" = "Kirim ulang kode dalam %ld detik";

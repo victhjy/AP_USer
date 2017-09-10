@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="APVerificationCodeVC">
+            <connections>
+                <outlet property="bottomView" destination="g09-hZ-yQQ" id="d2X-TG-Rur"/>
+                <outlet property="inputYourCodeLbl" destination="Eei-gj-Bjy" id="nby-vc-9gL"/>
+                <outlet property="nextLabel" destination="zDZ-7b-Bb8" id="LLv-SH-9Be"/>
+                <outlet property="resendBtn" destination="e7J-fV-INM" id="Yge-RC-sil"/>
+                <outlet property="restbBtnWidth" destination="chh-Wl-JGc" id="h4Z-iD-4FM"/>
+                <outlet property="textfield" destination="YAK-hL-unq" id="Kc2-0V-sAE"/>
+                <outlet property="tfBgView" destination="Bnv-lk-0a7" id="idr-CE-mYQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input your verification code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eei-gj-Bjy">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnv-lk-0a7">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YAK-hL-unq">
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="YAK-hL-unq" firstAttribute="centerY" secondItem="Bnv-lk-0a7" secondAttribute="centerY" id="j8h-4q-xjp"/>
+                        <constraint firstAttribute="height" constant="50" id="n2Y-X8-0fm"/>
+                        <constraint firstItem="YAK-hL-unq" firstAttribute="centerX" secondItem="Bnv-lk-0a7" secondAttribute="centerX" id="qUG-My-kQW"/>
+                        <constraint firstItem="YAK-hL-unq" firstAttribute="width" secondItem="Bnv-lk-0a7" secondAttribute="width" multiplier="0.5" id="qY8-TU-Nef"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g09-hZ-yQQ">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEXT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDZ-7b-Bb8">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zDZ-7b-Bb8" firstAttribute="centerX" secondItem="g09-hZ-yQQ" secondAttribute="centerX" id="bTc-BP-kqM"/>
+                        <constraint firstAttribute="height" constant="59" id="eNx-dv-Kyl"/>
+                        <constraint firstItem="zDZ-7b-Bb8" firstAttribute="centerY" secondItem="g09-hZ-yQQ" secondAttribute="centerY" id="mVX-Rm-gB7"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7J-fV-INM">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="S0R-HH-whc"/>
+                        <constraint firstAttribute="width" constant="90" id="chh-Wl-JGc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="resendClicked:" destination="-1" eventType="touchUpInside" id="qja-ql-dAh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="e7J-fV-INM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5EJ-gg-54d"/>
+                <constraint firstAttribute="trailing" secondItem="g09-hZ-yQQ" secondAttribute="trailing" id="DFN-4W-ElO"/>
+                <constraint firstItem="Bnv-lk-0a7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="90" id="KBn-NK-eaA"/>
+                <constraint firstItem="g09-hZ-yQQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MHL-dC-Usr"/>
+                <constraint firstItem="e7J-fV-INM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="226" id="VFr-M8-dyE"/>
+                <constraint firstItem="Eei-gj-Bjy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WZE-Hv-3Df"/>
+                <constraint firstAttribute="bottom" secondItem="g09-hZ-yQQ" secondAttribute="bottom" id="c1z-RE-LkI"/>
+                <constraint firstAttribute="trailing" secondItem="Bnv-lk-0a7" secondAttribute="trailing" constant="90" id="itS-nQ-gox"/>
+                <constraint firstItem="Bnv-lk-0a7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="132" id="ymI-2C-sAJ"/>
+                <constraint firstItem="Eei-gj-Bjy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="yqf-xa-hxl"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

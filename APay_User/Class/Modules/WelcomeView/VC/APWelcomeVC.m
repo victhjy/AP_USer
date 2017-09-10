@@ -9,6 +9,7 @@
 
 #import "APWelcomeVC.h"
 #import "APWelcomeModel.h"
+#import "APLoginViewController.h"
 @interface APWelcomeVC ()<UIScrollViewDelegate>
 @property(nonatomic, strong) UIScrollView *scrollView;
 @property(nonatomic, strong) NSMutableArray *dataArr;
@@ -153,7 +154,8 @@
 #pragma mark - Skip Clicked
 
 - (void)skipBtnClicked:(UIButton *)btn {
-    
+     UINavigationController *navVC=[[UINavigationController alloc]initWithRootViewController:[[APLoginViewController alloc]init]];
+    [UIApplication sharedApplication].keyWindow.rootViewController=navVC;
 }
 
 #pragma mark - Next Clicked

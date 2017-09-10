@@ -7,7 +7,7 @@
 //
 
 #import "APLoginViewController.h"
-
+#import "APRegisterVC.h"
 @interface APLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *bgView;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumTf;
@@ -22,8 +22,20 @@
 
 @implementation APLoginViewController
 
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES];
+//}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:YES];
     self.bgView.image=[UIColor imageWithColor:ThemeColor];
 
     self.phoneNumTf.borderStyle=UITextBorderStyleNone;
@@ -32,6 +44,8 @@
     [self.phoneNumTf setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
     
     [self.passwordTf setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+
+   [self.phoneNumTf setValue:[UIFont systemFontOfSize:15] forKeyPath:@"_placeholderLabel.font"];
     
     [self.hidePasswordBtn setImage:[UIImage imageNamed:@"Shapewhite"] forState:UIControlStateNormal];
     [self.hidePasswordBtn addTarget:self action:@selector(hidePasswordBtnClicked) forControlEvents:UIControlEventTouchUpInside];
@@ -55,8 +69,11 @@
     self.versionLbl.text=[NSString stringWithFormat:@"V %@",[APPManager share].appVersion];
     
     self.registerLbl.userInteractionEnabled=YES;
+    __weak __typeof(self)weakSelf = self;
     [self.registerLbl addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
         APLog(@"register");
+        APRegisterVC *vc=[[APRegisterVC alloc]init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     self.bgView.userInteractionEnabled=YES;
     [self.bgView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
