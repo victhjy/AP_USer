@@ -22,3 +22,12 @@
 "Input your verification code" = "Masukkan kode verifickasi anda";
 "Resend Code" = "Kirim Ulang Kode";
 "Resend code in %lds" = "Kirim ulang kode dalam %ld detik";
+"Username" = "Nama Pengguna";
+"Input Username" = "Masukkan Nama Pengguna";
+"Input Password" = "Masukkan Kata Sandi";
+"Confirm Password" = "Konfirmasi Kata Sandi";
+"Invitation Code" = "Kode Undangan";
+"(optional)" = "(jika ada)";
+"Input Invitation Code" = "Masukkan Kode Undangan";
+
+

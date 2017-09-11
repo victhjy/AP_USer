@@ -61,6 +61,10 @@
         APVerificationCodeVC *codeVC=[[APVerificationCodeVC alloc]init];
         [weakSelf.navigationController pushViewController:codeVC animated:YES];
     }];
+    
+    [self.view addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        [weakSelf.view endEditing:YES];
+    }];
     // Do any additional setup after loading the view from its nib.
 }
 

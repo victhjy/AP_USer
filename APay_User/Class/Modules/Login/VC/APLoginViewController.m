@@ -8,6 +8,7 @@
 
 #import "APLoginViewController.h"
 #import "APRegisterVC.h"
+#import "APMainViewVC.h"
 @interface APLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *bgView;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumTf;
@@ -32,11 +33,9 @@
     [self.navigationController setNavigationBarHidden:YES];
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES];
-    self.bgView.image=[UIColor imageWithColor:ThemeColor];
 
     self.phoneNumTf.borderStyle=UITextBorderStyleNone;
     self.passwordTf.borderStyle=UITextBorderStyleNone;
@@ -95,7 +94,8 @@
     }
 }
 - (IBAction)loginAction:(id)sender {
-    
+    APMainViewVC *mainVC=[[APMainViewVC alloc]init];
+    [self.navigationController pushViewController:mainVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

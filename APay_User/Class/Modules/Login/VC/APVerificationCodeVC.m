@@ -7,6 +7,7 @@
 //
 
 #import "APVerificationCodeVC.h"
+#import "APRegisterInfoVC.h"
 
 @interface APVerificationCodeVC ()
 @property (weak, nonatomic) IBOutlet UILabel *inputYourCodeLbl;
@@ -47,6 +48,20 @@
     
     self.curSec = 5;
     
+    self.bottomView.userInteractionEnabled=YES;
+    self.nextLabel.userInteractionEnabled=YES;
+    __weak __typeof(self)weakSelf = self;
+    [self.bottomView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        APRegisterInfoVC *infoVC=[[APRegisterInfoVC alloc]init];
+        [weakSelf.navigationController pushViewController:infoVC animated:YES];
+    }];
+    [self.nextLabel addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        APRegisterInfoVC *infoVC=[[APRegisterInfoVC alloc]init];
+        [weakSelf.navigationController pushViewController:infoVC animated:YES];
+    }];
+    [self.view addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        [weakSelf.view endEditing:YES];
+    }];
     
     // Do any additional setup after loading the view from its nib.
 }

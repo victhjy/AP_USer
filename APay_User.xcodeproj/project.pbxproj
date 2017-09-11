@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		813D0B9D1F66BA7100022A10 /* APRegisterInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0B9B1F66BA7100022A10 /* APRegisterInfoVC.m */; };
+		813D0B9E1F66BA7100022A10 /* APRegisterInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813D0B9C1F66BA7100022A10 /* APRegisterInfoVC.xib */; };
+		813D0BA51F66CE9200022A10 /* APMainViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0BA41F66CE9200022A10 /* APMainViewVC.m */; };
+		813D0BA91F66CFFB00022A10 /* APMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0BA71F66CFFB00022A10 /* APMainCell.m */; };
+		813D0BAD1F66D5A500022A10 /* APMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0BAC1F66D5A500022A10 /* APMainModel.m */; };
 		819ED51D1F63D15000934C8B /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 819ED51C1F63D15000934C8B /* UIView+Frame.m */; };
 		819ED52A1F63D55B00934C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819ED5281F63D55B00934C8B /* Main.storyboard */; };
 		819ED5351F64199D00934C8B /* APLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819ED5331F64199D00934C8B /* APLoginViewController.m */; };
@@ -58,6 +63,15 @@
 /* Begin PBXFileReference section */
 		453E4523142606DB9D4E8EFE /* Pods_APay_User.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APay_User.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5811F7E024261CC88791A310 /* Pods-APay_User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APay_User.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APay_User/Pods-APay_User.debug.xcconfig"; sourceTree = "<group>"; };
+		813D0B9A1F66BA7100022A10 /* APRegisterInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRegisterInfoVC.h; sourceTree = "<group>"; };
+		813D0B9B1F66BA7100022A10 /* APRegisterInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRegisterInfoVC.m; sourceTree = "<group>"; };
+		813D0B9C1F66BA7100022A10 /* APRegisterInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APRegisterInfoVC.xib; sourceTree = "<group>"; };
+		813D0BA31F66CE9200022A10 /* APMainViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMainViewVC.h; sourceTree = "<group>"; };
+		813D0BA41F66CE9200022A10 /* APMainViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainViewVC.m; sourceTree = "<group>"; };
+		813D0BA61F66CFFB00022A10 /* APMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMainCell.h; sourceTree = "<group>"; };
+		813D0BA71F66CFFB00022A10 /* APMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainCell.m; sourceTree = "<group>"; };
+		813D0BAB1F66D5A500022A10 /* APMainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMainModel.h; sourceTree = "<group>"; };
+		813D0BAC1F66D5A500022A10 /* APMainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainModel.m; sourceTree = "<group>"; };
 		819ED51B1F63D15000934C8B /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		819ED51C1F63D15000934C8B /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		819ED5291F63D55B00934C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,6 +170,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		813D0B9F1F66CE7C00022A10 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				813D0BA01F66CE7C00022A10 /* Model */,
+				813D0BA11F66CE7C00022A10 /* VC */,
+				813D0BA21F66CE7C00022A10 /* View */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		813D0BA01F66CE7C00022A10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				813D0BAB1F66D5A500022A10 /* APMainModel.h */,
+				813D0BAC1F66D5A500022A10 /* APMainModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		813D0BA11F66CE7C00022A10 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				813D0BA31F66CE9200022A10 /* APMainViewVC.h */,
+				813D0BA41F66CE9200022A10 /* APMainViewVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		813D0BA21F66CE7C00022A10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				813D0BA61F66CFFB00022A10 /* APMainCell.h */,
+				813D0BA71F66CFFB00022A10 /* APMainCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		819ED52B1F64108600934C8B /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +236,9 @@
 				81F029D91F657860006C98E3 /* APVerificationCodeVC.h */,
 				81F029DA1F657860006C98E3 /* APVerificationCodeVC.m */,
 				81F029DB1F657860006C98E3 /* APVerificationCodeVC.xib */,
+				813D0B9A1F66BA7100022A10 /* APRegisterInfoVC.h */,
+				813D0B9B1F66BA7100022A10 /* APRegisterInfoVC.m */,
+				813D0B9C1F66BA7100022A10 /* APRegisterInfoVC.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -322,6 +376,7 @@
 		81A2B8F61F5ED5620026D6D2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				813D0B9F1F66CE7C00022A10 /* MainView */,
 				819ED52B1F64108600934C8B /* Login */,
 				81F08A281F63C2E3009B4DA9 /* WelcomeView */,
 			);
@@ -516,6 +571,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813D0B9E1F66BA7100022A10 /* APRegisterInfoVC.xib in Resources */,
 				81F029CE1F6569C7006C98E3 /* APRegisterVC.xib in Resources */,
 				81A2B8CA1F5ECF7F0026D6D2 /* LaunchScreen.storyboard in Resources */,
 				81F029DD1F657860006C98E3 /* APVerificationCodeVC.xib in Resources */,
@@ -617,14 +673,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813D0BA51F66CE9200022A10 /* APMainViewVC.m in Sources */,
 				819ED51D1F63D15000934C8B /* UIView+Frame.m in Sources */,
 				81F08A341F63C8AE009B4DA9 /* APWelcomeModel.m in Sources */,
 				81F029D71F65752B006C98E3 /* UINavigationController+KMNavigationBarTransition.m in Sources */,
 				81F08A271F63BF12009B4DA9 /* MBProgressHUD+MJ.m in Sources */,
 				81F08A181F63BABE009B4DA9 /* UIColor+Utility.m in Sources */,
 				81F029D61F65752B006C98E3 /* KMSwizzle.m in Sources */,
+				813D0BAD1F66D5A500022A10 /* APMainModel.m in Sources */,
 				819ED5351F64199D00934C8B /* APLoginViewController.m in Sources */,
+				813D0BA91F66CFFB00022A10 /* APMainCell.m in Sources */,
 				81F08A051F63B587009B4DA9 /* APTools.m in Sources */,
+				813D0B9D1F66BA7100022A10 /* APRegisterInfoVC.m in Sources */,
 				81A2B8BF1F5ECF7E0026D6D2 /* AppDelegate.m in Sources */,
 				81F029DC1F657860006C98E3 /* APVerificationCodeVC.m in Sources */,
 				81F08A1B1F63BBFF009B4DA9 /* APNetManager.m in Sources */,
