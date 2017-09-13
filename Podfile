@@ -16,4 +16,6 @@ pod 'IQKeyboardManager'
 pod 'Masonry'
 pod 'FMDB'
 pod 'LKDBHelper'
+pod 'BHInfiniteScrollView'
+pod 'ZXingObjC', '~> 3.2.1'
 end

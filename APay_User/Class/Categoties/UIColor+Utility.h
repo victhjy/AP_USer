@@ -10,5 +10,8 @@
 
 @interface UIColor (Utility)
 
-+ (UIImage*)imageWithColor: (UIColor*) color;
++ (UIImage*)imageFromColor: (UIColor*) color;
++ (UIColor*)randomColor;
+
++ (UIImage *)randomColorImage;
 @end

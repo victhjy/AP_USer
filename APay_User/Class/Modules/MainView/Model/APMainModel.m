@@ -13,7 +13,7 @@
 
 +(NSMutableArray *)defaultTableViewArrWithModel:(APMainModel *)model{
     NSMutableArray *resultArr=[NSMutableArray new];
-    NSArray *imageArr1 = @[@"ic_wallet",@"ic_topupwallet",@"ic_pay"];
+    NSArray *imageArr1 = @[@"ic_wallet",@"ic_topup",@"ic_pay"];
     
     NSMutableArray *muarr1=[NSMutableArray new];
     for (int i = 0; i < 3 ; i ++) {

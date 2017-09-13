@@ -10,7 +10,7 @@
 
 @implementation UIColor (Utility)
 
-+ (UIImage*)imageWithColor: (UIColor*) color
++ (UIImage*)imageFromColor: (UIColor*) color
 {
     CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
@@ -20,5 +20,21 @@
     UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return theImage;
+}
+
++ (UIColor*)randomColor{
+    
+    CGFloat hue = (arc4random() %256/256.0);
+    
+    CGFloat saturation = (arc4random() %128/256.0) +0.5;
+    
+    CGFloat brightness = (arc4random() %128/256.0) +0.5;
+    
+    UIColor*color = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+    return color;
+}
+
++ (UIImage *)randomColorImage{
+    return [UIColor imageFromColor:[UIColor randomColor]];
 }
 @end

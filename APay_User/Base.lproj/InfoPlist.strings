@@ -30,7 +30,9 @@
 "Invitation Code" = "Invitation Code";
 "(optional)" = "(optional)";
 "Input Invitation Code" = "Input Invitation Code";
-
-
-
+"Align QR Code within frame to scan" = "Align QR Code within frame to scan";
+"Pay By QR Code" = "Pay By QR Code";
+"Set Amount" = "Set Amount";
+"Amount" = "Amount";
+"Add note here.." = "Add note here..";
 

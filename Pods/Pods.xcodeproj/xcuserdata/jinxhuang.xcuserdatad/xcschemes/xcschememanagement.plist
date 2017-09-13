@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BHInfiniteScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ZXingObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -67,22 +77,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4118C6C16F064C9644C20F1DCFB14534</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4AAA9F620D10872683A7780838E980C6</key>
+		<key>5B50CBEA66A38A93B38C90DA09C6DB0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>922DEC4C92B42709A8C15D64814A6F57</key>
+		<key>79D44D4E285561F13E7B2D117875250E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C83CF6CB187BC93BCA41D0103A94D6A9</key>
+		<key>926DBEB664027B445265A571EE418D47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A70687E0FE88A5474582D349DDD8E20F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

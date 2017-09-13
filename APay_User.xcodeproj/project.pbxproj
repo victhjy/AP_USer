@@ -7,11 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		812F6CFE1F683DFB0031CC8F /* APMainScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 812F6CFD1F683DFB0031CC8F /* APMainScrollCell.m */; };
 		813D0B9D1F66BA7100022A10 /* APRegisterInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0B9B1F66BA7100022A10 /* APRegisterInfoVC.m */; };
 		813D0B9E1F66BA7100022A10 /* APRegisterInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813D0B9C1F66BA7100022A10 /* APRegisterInfoVC.xib */; };
 		813D0BA51F66CE9200022A10 /* APMainViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0BA41F66CE9200022A10 /* APMainViewVC.m */; };
 		813D0BA91F66CFFB00022A10 /* APMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0BA71F66CFFB00022A10 /* APMainCell.m */; };
 		813D0BAD1F66D5A500022A10 /* APMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0BAC1F66D5A500022A10 /* APMainModel.m */; };
+		814EF4D61F6961A8003CDE7F /* NBZXingQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 814EF4D01F6961A8003CDE7F /* NBZXingQRViewController.m */; };
+		814EF4D71F6961A8003CDE7F /* NBZXingQRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814EF4D11F6961A8003CDE7F /* NBZXingQRViewController.xib */; };
+		814EF4D81F6961A8003CDE7F /* HSScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 814EF4D51F6961A8003CDE7F /* HSScanView.m */; };
+		814EF4DA1F696364003CDE7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EF4D91F696364003CDE7F /* UIKit.framework */; };
+		814EF4DC1F69636C003CDE7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EF4DB1F69636C003CDE7F /* Foundation.framework */; };
+		814EF4DE1F696376003CDE7F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EF4DD1F696376003CDE7F /* AVFoundation.framework */; };
+		814EF4E01F69637D003CDE7F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EF4DF1F69637C003CDE7F /* ImageIO.framework */; };
+		814EF4E21F696387003CDE7F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EF4E11F696387003CDE7F /* QuartzCore.framework */; };
+		814EF4E41F696392003CDE7F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EF4E31F696392003CDE7F /* CoreMedia.framework */; };
+		814EF4E61F696398003CDE7F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EF4E51F696398003CDE7F /* CoreVideo.framework */; };
+		814EF4E81F69639F003CDE7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EF4E71F69639F003CDE7F /* CoreGraphics.framework */; };
+		814EF4EF1F6971EF003CDE7F /* APSetAmountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 814EF4EE1F6971EF003CDE7F /* APSetAmountVC.m */; };
+		814EF4F21F69790B003CDE7F /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 814EF4F11F69790B003CDE7F /* UITextView+Placeholder.m */; };
 		819ED51D1F63D15000934C8B /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 819ED51C1F63D15000934C8B /* UIView+Frame.m */; };
 		819ED52A1F63D55B00934C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819ED5281F63D55B00934C8B /* Main.storyboard */; };
 		819ED5351F64199D00934C8B /* APLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819ED5331F64199D00934C8B /* APLoginViewController.m */; };
@@ -63,6 +77,8 @@
 /* Begin PBXFileReference section */
 		453E4523142606DB9D4E8EFE /* Pods_APay_User.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APay_User.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5811F7E024261CC88791A310 /* Pods-APay_User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APay_User.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APay_User/Pods-APay_User.debug.xcconfig"; sourceTree = "<group>"; };
+		812F6CFC1F683DFB0031CC8F /* APMainScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMainScrollCell.h; sourceTree = "<group>"; };
+		812F6CFD1F683DFB0031CC8F /* APMainScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainScrollCell.m; sourceTree = "<group>"; };
 		813D0B9A1F66BA7100022A10 /* APRegisterInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRegisterInfoVC.h; sourceTree = "<group>"; };
 		813D0B9B1F66BA7100022A10 /* APRegisterInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRegisterInfoVC.m; sourceTree = "<group>"; };
 		813D0B9C1F66BA7100022A10 /* APRegisterInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APRegisterInfoVC.xib; sourceTree = "<group>"; };
@@ -72,6 +88,23 @@
 		813D0BA71F66CFFB00022A10 /* APMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainCell.m; sourceTree = "<group>"; };
 		813D0BAB1F66D5A500022A10 /* APMainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMainModel.h; sourceTree = "<group>"; };
 		813D0BAC1F66D5A500022A10 /* APMainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainModel.m; sourceTree = "<group>"; };
+		814EF4CF1F6961A8003CDE7F /* NBZXingQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBZXingQRViewController.h; sourceTree = "<group>"; };
+		814EF4D01F6961A8003CDE7F /* NBZXingQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBZXingQRViewController.m; sourceTree = "<group>"; };
+		814EF4D11F6961A8003CDE7F /* NBZXingQRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NBZXingQRViewController.xib; sourceTree = "<group>"; };
+		814EF4D41F6961A8003CDE7F /* HSScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSScanView.h; sourceTree = "<group>"; };
+		814EF4D51F6961A8003CDE7F /* HSScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSScanView.m; sourceTree = "<group>"; };
+		814EF4D91F696364003CDE7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		814EF4DB1F69636C003CDE7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		814EF4DD1F696376003CDE7F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		814EF4DF1F69637C003CDE7F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		814EF4E11F696387003CDE7F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		814EF4E31F696392003CDE7F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		814EF4E51F696398003CDE7F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		814EF4E71F69639F003CDE7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		814EF4ED1F6971EF003CDE7F /* APSetAmountVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSetAmountVC.h; sourceTree = "<group>"; };
+		814EF4EE1F6971EF003CDE7F /* APSetAmountVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSetAmountVC.m; sourceTree = "<group>"; };
+		814EF4F01F69790B003CDE7F /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		814EF4F11F69790B003CDE7F /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		819ED51B1F63D15000934C8B /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		819ED51C1F63D15000934C8B /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		819ED5291F63D55B00934C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +172,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814EF4E81F69639F003CDE7F /* CoreGraphics.framework in Frameworks */,
+				814EF4E61F696398003CDE7F /* CoreVideo.framework in Frameworks */,
+				814EF4E41F696392003CDE7F /* CoreMedia.framework in Frameworks */,
+				814EF4E21F696387003CDE7F /* QuartzCore.framework in Frameworks */,
+				814EF4E01F69637D003CDE7F /* ImageIO.framework in Frameworks */,
+				814EF4DE1F696376003CDE7F /* AVFoundation.framework in Frameworks */,
+				814EF4DC1F69636C003CDE7F /* Foundation.framework in Frameworks */,
+				814EF4DA1F696364003CDE7F /* UIKit.framework in Frameworks */,
 				81A2B8EE1F5ED1E60026D6D2 /* libsqlite3.tbd in Frameworks */,
 				B94B48728586D67AC45CBFF8 /* Pods_APay_User.framework in Frameworks */,
 			);
@@ -164,6 +205,14 @@
 		40BEC1C8F101F11BA42A01B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				814EF4E71F69639F003CDE7F /* CoreGraphics.framework */,
+				814EF4E51F696398003CDE7F /* CoreVideo.framework */,
+				814EF4E31F696392003CDE7F /* CoreMedia.framework */,
+				814EF4E11F696387003CDE7F /* QuartzCore.framework */,
+				814EF4DF1F69637C003CDE7F /* ImageIO.framework */,
+				814EF4DD1F696376003CDE7F /* AVFoundation.framework */,
+				814EF4DB1F69636C003CDE7F /* Foundation.framework */,
+				814EF4D91F696364003CDE7F /* UIKit.framework */,
 				81A2B8ED1F5ED1E60026D6D2 /* libsqlite3.tbd */,
 				453E4523142606DB9D4E8EFE /* Pods_APay_User.framework */,
 			);
@@ -203,6 +252,77 @@
 			children = (
 				813D0BA61F66CFFB00022A10 /* APMainCell.h */,
 				813D0BA71F66CFFB00022A10 /* APMainCell.m */,
+				812F6CFC1F683DFB0031CC8F /* APMainScrollCell.h */,
+				812F6CFD1F683DFB0031CC8F /* APMainScrollCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		814EF4CD1F6961A8003CDE7F /* ZXingObjcQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				814EF4CE1F6961A8003CDE7F /* Controller */,
+				814EF4D21F6961A8003CDE7F /* Model */,
+				814EF4D31F6961A8003CDE7F /* View */,
+			);
+			path = ZXingObjcQRCode;
+			sourceTree = "<group>";
+		};
+		814EF4CE1F6961A8003CDE7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				814EF4CF1F6961A8003CDE7F /* NBZXingQRViewController.h */,
+				814EF4D01F6961A8003CDE7F /* NBZXingQRViewController.m */,
+				814EF4D11F6961A8003CDE7F /* NBZXingQRViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		814EF4D21F6961A8003CDE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		814EF4D31F6961A8003CDE7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				814EF4D41F6961A8003CDE7F /* HSScanView.h */,
+				814EF4D51F6961A8003CDE7F /* HSScanView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		814EF4E91F69716F003CDE7F /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				814EF4EA1F69716F003CDE7F /* Model */,
+				814EF4EB1F69716F003CDE7F /* VC */,
+				814EF4EC1F69716F003CDE7F /* View */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		814EF4EA1F69716F003CDE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		814EF4EB1F69716F003CDE7F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				814EF4ED1F6971EF003CDE7F /* APSetAmountVC.h */,
+				814EF4EE1F6971EF003CDE7F /* APSetAmountVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		814EF4EC1F69716F003CDE7F /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +460,8 @@
 				81E2E8061F6243BF0029DF39 /* NSString+Size.m */,
 				81F08A161F63BABE009B4DA9 /* UIColor+Utility.h */,
 				81F08A171F63BABE009B4DA9 /* UIColor+Utility.m */,
+				814EF4F01F69790B003CDE7F /* UITextView+Placeholder.h */,
+				814EF4F11F69790B003CDE7F /* UITextView+Placeholder.m */,
 			);
 			path = Categoties;
 			sourceTree = "<group>";
@@ -376,6 +498,7 @@
 		81A2B8F61F5ED5620026D6D2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				814EF4E91F69716F003CDE7F /* Pay */,
 				813D0B9F1F66CE7C00022A10 /* MainView */,
 				819ED52B1F64108600934C8B /* Login */,
 				81F08A281F63C2E3009B4DA9 /* WelcomeView */,
@@ -395,6 +518,7 @@
 		81A2B8F81F5ED5620026D6D2 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				814EF4CD1F6961A8003CDE7F /* ZXingObjcQRCode */,
 				81F029CF1F65752B006C98E3 /* KMNavigationBarTransition */,
 			);
 			path = Vendors;
@@ -576,6 +700,7 @@
 				81A2B8CA1F5ECF7F0026D6D2 /* LaunchScreen.storyboard in Resources */,
 				81F029DD1F657860006C98E3 /* APVerificationCodeVC.xib in Resources */,
 				819ED5371F641DE500934C8B /* APLoginViewController.xib in Resources */,
+				814EF4D71F6961A8003CDE7F /* NBZXingQRViewController.xib in Resources */,
 				81F08A111F63B8DA009B4DA9 /* InfoPlist.strings in Resources */,
 				81A2B8C71F5ECF7F0026D6D2 /* Assets.xcassets in Resources */,
 				819ED52A1F63D55B00934C8B /* Main.storyboard in Resources */,
@@ -625,6 +750,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-APay_User/Pods-APay_User-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BHInfiniteScrollView/BHInfiniteScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
@@ -633,10 +759,12 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BHInfiniteScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
@@ -645,6 +773,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZXingObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -680,10 +809,13 @@
 				81F08A271F63BF12009B4DA9 /* MBProgressHUD+MJ.m in Sources */,
 				81F08A181F63BABE009B4DA9 /* UIColor+Utility.m in Sources */,
 				81F029D61F65752B006C98E3 /* KMSwizzle.m in Sources */,
+				814EF4F21F69790B003CDE7F /* UITextView+Placeholder.m in Sources */,
 				813D0BAD1F66D5A500022A10 /* APMainModel.m in Sources */,
 				819ED5351F64199D00934C8B /* APLoginViewController.m in Sources */,
 				813D0BA91F66CFFB00022A10 /* APMainCell.m in Sources */,
+				814EF4D81F6961A8003CDE7F /* HSScanView.m in Sources */,
 				81F08A051F63B587009B4DA9 /* APTools.m in Sources */,
+				814EF4EF1F6971EF003CDE7F /* APSetAmountVC.m in Sources */,
 				813D0B9D1F66BA7100022A10 /* APRegisterInfoVC.m in Sources */,
 				81A2B8BF1F5ECF7E0026D6D2 /* AppDelegate.m in Sources */,
 				81F029DC1F657860006C98E3 /* APVerificationCodeVC.m in Sources */,
@@ -691,9 +823,11 @@
 				81F08A081F63B592009B4DA9 /* APHeaders.m in Sources */,
 				81E2E8071F6243BF0029DF39 /* NSString+Size.m in Sources */,
 				81F029CD1F6569C7006C98E3 /* APRegisterVC.m in Sources */,
+				812F6CFE1F683DFB0031CC8F /* APMainScrollCell.m in Sources */,
 				81A2B8BC1F5ECF7E0026D6D2 /* main.m in Sources */,
 				81F029D81F65752B006C98E3 /* UIViewController+KMNavigationBarTransition.m in Sources */,
 				81F08A311F63C896009B4DA9 /* APWelcomeVC.m in Sources */,
+				814EF4D61F6961A8003CDE7F /* NBZXingQRViewController.m in Sources */,
 				81F08A1E1F63BDC4009B4DA9 /* APPManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

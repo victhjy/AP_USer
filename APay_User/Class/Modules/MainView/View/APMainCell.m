@@ -19,6 +19,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self createUI];
+        self.selectionStyle=UITableViewCellSelectionStyleNone;
     }
     return self;
 }
@@ -26,13 +27,16 @@
 - (void)createUI {
     for (int i = 0; i < 3; i ++) {
         UIImageView *iconImage = [[UIImageView alloc]initWithFrame:CGRectMake(kWidth/3 * i + kWidth/9, 20, kWidth/9, kWidth/9)];
-        UILabel *titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(kWidth/3 * i, 20 + kWidth/9 + 10, kWidth / 3, 20)];
+        UILabel *titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(kWidth/3 * i, 30 + kWidth/9 + 10, kWidth / 3, 20)];
         titleLbl.textAlignment=1;
         titleLbl.font=[UIFont systemFontOfSize:16];
         
         iconImage.tag = 100+i;
         titleLbl.tag = 200+i;
         
+        if (i == 1) {
+            iconImage.frame =CGRectMake(kWidth/3 * i + kWidth/9 + 3, 20, kWidth/9 - 6, kWidth/9);
+        }
         
         if (i == 0) {
             UILabel *subTitleLbl = [[UILabel alloc]initWithFrame:CGRectMake(kWidth/3 * i, 20 + kWidth/9, kWidth / 3, 20)];
@@ -41,6 +45,17 @@
             [self.contentView addSubview:subTitleLbl];
             subTitleLbl.tag = 300+i;
         }
+        
+        __weak __typeof(self)weakSelf = self;
+        iconImage.userInteractionEnabled=YES;
+        [iconImage addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+            [weakSelf itemClicked:i];
+        }];
+        
+        titleLbl.userInteractionEnabled=YES;
+        [titleLbl addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+            [weakSelf itemClicked:i];
+        }];
         
         [self.contentView addSubview:iconImage];
         [self.contentView addSubview:titleLbl];
@@ -59,6 +74,13 @@
     [self.contentView addSubview:line1];
     [self.contentView addSubview:line2];
     [self.contentView addSubview:line3];
+    
+    __weak __typeof(self)weakSelf = self;
+    [self.contentView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        CGPoint touchP = [gestureRecoginzer locationInView:weakSelf.contentView];
+        NSInteger index= (NSInteger) touchP.x/(kWidth/3);
+        [weakSelf itemClicked:index];
+    }];
     
 }
 
@@ -80,7 +102,11 @@
 }
 
 
-
+- (void)itemClicked:(NSInteger)index{
+    if (self.clickedItem) {
+        self.clickedItem(index);
+    }
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

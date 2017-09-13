@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^ItemBlock)(NSInteger);
 @interface APMainCell : UITableViewCell
 
 
 @property(nonatomic, strong) NSMutableArray *dataArr;
+
+@property(nonatomic, copy) ItemBlock clickedItem;
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
 @end

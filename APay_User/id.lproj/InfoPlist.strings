@@ -29,5 +29,12 @@
 "Invitation Code" = "Kode Undangan";
 "(optional)" = "(jika ada)";
 "Input Invitation Code" = "Masukkan Kode Undangan";
+"Align QR Code within frame to scan" = "Sejajarkan Kode QR di dalam bingkai untuk dipindai";
+"Pay By QR Code" = "Bayar dengan QR Code";
+"Set Amount" = "Setel Nominal";
+"Amount" = "Jumlah";
+"Add note here.." = "Tulis catatan disini..";
+
+
 
 

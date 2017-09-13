@@ -9,8 +9,9 @@
 #import "APMainViewVC.h"
 #import "APMainCell.h"
 #import "APMainModel.h"
-
-@interface APMainViewVC ()<UITableViewDelegate,UITableViewDataSource>
+#import "APMainScrollCell.h"
+#import "NBZXingQRViewController.h"
+@interface APMainViewVC ()<UITableViewDelegate,UITableViewDataSource,NBZXingQRViewControllerDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSMutableArray *tableViewArr;
 @property(nonatomic, strong) APMainModel *mainModel;
@@ -30,6 +31,7 @@
     self.view.backgroundColor=[UIColor whiteColor];
     self.title=@"123";
     [self.view addSubview:self.tableView];
+    self.automaticallyAdjustsScrollViewInsets=NO;
     // Do any additional setup after loading the view.
 }
 
@@ -37,25 +39,55 @@
 #pragma mark - TableView delegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.tableViewArr.count;
+    if (section == 0) {
+        return self.tableViewArr.count;
+    }
+    else{
+        return 1;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return kWidth/3;
+    if (indexPath.section == 0) {
+        return kWidth/3;
+    }
+    else{
+        return kWidth*0.367;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identifier = @"cell";
-    APMainCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[APMainCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    if (indexPath.section == 0) {
+        static NSString *identifier = @"cell";
+        APMainCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if (!cell) {
+            cell = [[APMainCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        }
+        cell.dataArr=self.tableViewArr[indexPath.row];
+        
+        __weak __typeof(self)weakSelf = self;
+        cell.clickedItem=^(NSInteger index){
+            [weakSelf itemAction:(indexPath.row * 3)+index];
+        };
+        return cell;
     }
-    cell.dataArr=self.tableViewArr[indexPath.row];
-    return cell;
+    else{
+        static NSString *section1Iden=@"cellSection1";
+        APMainScrollCell *cell = [tableView dequeueReusableCellWithIdentifier:section1Iden];
+        if (!cell) {
+            cell = [[APMainScrollCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:section1Iden];
+        }
+        __weak __typeof(self)weakSelf = self;
+        cell.dataArr=[@[@"123",@"1333",@"1"] mutableCopy];
+        cell.block=^(NSInteger clickedIndex){
+            [weakSelf scrollImageClicked:clickedIndex];
+        };
+        return cell;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -63,6 +95,19 @@
 }
 
 #pragma mark - private method
+
+- (void)itemAction:(NSInteger)index {
+    APLog(@"%ld",index);
+    if (index == 2) {
+        NBZXingQRViewController *scanVC=[[NBZXingQRViewController alloc]init];
+//        scanVC.delegate=self;
+        [self.navigationController pushViewController:scanVC animated:YES];
+    }
+}
+
+- (void)scrollImageClicked:(NSInteger)index {
+    APLog(@"%ld",index);
+}
 
 
 #pragma mark - Getter
@@ -74,7 +119,7 @@
 
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kWidth, kHeight - 64) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, kWidth, kHeight - 64) style:UITableViewStylePlain];
         _tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
         _tableView.tableFooterView=[UIView new];
         _tableView.delegate=self;
