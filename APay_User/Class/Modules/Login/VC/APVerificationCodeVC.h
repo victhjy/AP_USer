@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface APVerificationCodeVC : UIViewController
+#import "APUIViewController.h"
+@interface APVerificationCodeVC : APUIViewController
 
 @end

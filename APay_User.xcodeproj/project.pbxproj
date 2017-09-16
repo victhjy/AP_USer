@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810B56751F6A7F91008A60A1 /* APEnterPaymentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B56741F6A7F91008A60A1 /* APEnterPaymentView.m */; };
 		812F6CFE1F683DFB0031CC8F /* APMainScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 812F6CFD1F683DFB0031CC8F /* APMainScrollCell.m */; };
 		813D0B9D1F66BA7100022A10 /* APRegisterInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0B9B1F66BA7100022A10 /* APRegisterInfoVC.m */; };
 		813D0B9E1F66BA7100022A10 /* APRegisterInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813D0B9C1F66BA7100022A10 /* APRegisterInfoVC.xib */; };
@@ -30,6 +31,8 @@
 		819ED52A1F63D55B00934C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819ED5281F63D55B00934C8B /* Main.storyboard */; };
 		819ED5351F64199D00934C8B /* APLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819ED5331F64199D00934C8B /* APLoginViewController.m */; };
 		819ED5371F641DE500934C8B /* APLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819ED5391F641DE500934C8B /* APLoginViewController.xib */; };
+		81A135271F6ABDFF00B89C3B /* APSetPaymentPWDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A135261F6ABDFF00B89C3B /* APSetPaymentPWDVC.m */; };
+		81A1352A1F6AC3BC00B89C3B /* APSetCompletedPaymentPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A135291F6AC3BC00B89C3B /* APSetCompletedPaymentPwdVC.m */; };
 		81A2B8BC1F5ECF7E0026D6D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A2B8BB1F5ECF7E0026D6D2 /* main.m */; };
 		81A2B8BF1F5ECF7E0026D6D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A2B8BE1F5ECF7E0026D6D2 /* AppDelegate.m */; };
 		81A2B8C71F5ECF7F0026D6D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A2B8C61F5ECF7F0026D6D2 /* Assets.xcassets */; };
@@ -37,6 +40,13 @@
 		81A2B8D51F5ECF7F0026D6D2 /* APay_UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A2B8D41F5ECF7F0026D6D2 /* APay_UserTests.m */; };
 		81A2B8E01F5ECF7F0026D6D2 /* APay_UserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A2B8DF1F5ECF7F0026D6D2 /* APay_UserUITests.m */; };
 		81A2B8EE1F5ED1E60026D6D2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A2B8ED1F5ED1E60026D6D2 /* libsqlite3.tbd */; };
+		81A9419D1F6BF6C700A97618 /* Calibre-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81A9419A1F6BF6C700A97618 /* Calibre-Medium.ttf */; };
+		81A9419E1F6BF6C700A97618 /* Calibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81A9419B1F6BF6C700A97618 /* Calibre-Regular.ttf */; };
+		81A9419F1F6BF6C700A97618 /* Calibre-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81A9419C1F6BF6C700A97618 /* Calibre-Semibold.ttf */; };
+		81A941A21F6BF8AC00A97618 /* UIFont+APFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A941A11F6BF8AC00A97618 /* UIFont+APFont.m */; };
+		81A941A51F6C1D4200A97618 /* APPayResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A941A41F6C1D4200A97618 /* APPayResultVC.m */; };
+		81A941A81F6C235400A97618 /* APPayResultHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A941A71F6C235400A97618 /* APPayResultHeaderCell.m */; };
+		81A941AB1F6C26D700A97618 /* APModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A941AA1F6C26D700A97618 /* APModel.m */; };
 		81E2E8071F6243BF0029DF39 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E2E8061F6243BF0029DF39 /* NSString+Size.m */; };
 		81F029CD1F6569C7006C98E3 /* APRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F029CB1F6569C7006C98E3 /* APRegisterVC.m */; };
 		81F029CE1F6569C7006C98E3 /* APRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F029CC1F6569C7006C98E3 /* APRegisterVC.xib */; };
@@ -54,6 +64,13 @@
 		81F08A271F63BF12009B4DA9 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F08A261F63BF12009B4DA9 /* MBProgressHUD+MJ.m */; };
 		81F08A311F63C896009B4DA9 /* APWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F08A2F1F63C896009B4DA9 /* APWelcomeVC.m */; };
 		81F08A341F63C8AE009B4DA9 /* APWelcomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F08A331F63C8AE009B4DA9 /* APWelcomeModel.m */; };
+		81F51B071F6B621D004697C5 /* APMainPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F51B061F6B621D004697C5 /* APMainPopView.m */; };
+		81F51B0A1F6B65FC004697C5 /* APTopUpBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F51B091F6B65FC004697C5 /* APTopUpBtn.m */; };
+		81F51B0E1F6BA737004697C5 /* APUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F51B0D1F6BA737004697C5 /* APUIViewController.m */; };
+		81F51B111F6BA756004697C5 /* APNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F51B101F6BA756004697C5 /* APNavigationController.m */; };
+		81F51B141F6BC009004697C5 /* APPayWrongPwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F51B131F6BC009004697C5 /* APPayWrongPwdView.m */; };
+		81F74FF21F6CB94900A75668 /* APPayResultDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F74FF11F6CB94900A75668 /* APPayResultDetailCell.m */; };
+		81F74FF51F6CBFC800A75668 /* APPayNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F74FF41F6CBFC800A75668 /* APPayNoteCell.m */; };
 		B94B48728586D67AC45CBFF8 /* Pods_APay_User.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453E4523142606DB9D4E8EFE /* Pods_APay_User.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +94,8 @@
 /* Begin PBXFileReference section */
 		453E4523142606DB9D4E8EFE /* Pods_APay_User.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APay_User.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5811F7E024261CC88791A310 /* Pods-APay_User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APay_User.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APay_User/Pods-APay_User.debug.xcconfig"; sourceTree = "<group>"; };
+		810B56731F6A7F91008A60A1 /* APEnterPaymentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APEnterPaymentView.h; sourceTree = "<group>"; };
+		810B56741F6A7F91008A60A1 /* APEnterPaymentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APEnterPaymentView.m; sourceTree = "<group>"; };
 		812F6CFC1F683DFB0031CC8F /* APMainScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMainScrollCell.h; sourceTree = "<group>"; };
 		812F6CFD1F683DFB0031CC8F /* APMainScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainScrollCell.m; sourceTree = "<group>"; };
 		813D0B9A1F66BA7100022A10 /* APRegisterInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRegisterInfoVC.h; sourceTree = "<group>"; };
@@ -113,6 +132,10 @@
 		819ED53C1F641E3400934C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/APLoginViewController.xib; sourceTree = "<group>"; };
 		819ED53E1F641E6E00934C8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/APLoginViewController.strings; sourceTree = "<group>"; };
 		819ED5401F641E7600934C8B /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/APLoginViewController.strings; sourceTree = "<group>"; };
+		81A135251F6ABDFF00B89C3B /* APSetPaymentPWDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSetPaymentPWDVC.h; sourceTree = "<group>"; };
+		81A135261F6ABDFF00B89C3B /* APSetPaymentPWDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSetPaymentPWDVC.m; sourceTree = "<group>"; };
+		81A135281F6AC3BC00B89C3B /* APSetCompletedPaymentPwdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSetCompletedPaymentPwdVC.h; sourceTree = "<group>"; };
+		81A135291F6AC3BC00B89C3B /* APSetCompletedPaymentPwdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSetCompletedPaymentPwdVC.m; sourceTree = "<group>"; };
 		81A2B8B71F5ECF7E0026D6D2 /* APay_User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APay_User.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A2B8BB1F5ECF7E0026D6D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81A2B8BD1F5ECF7E0026D6D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +150,17 @@
 		81A2B8DF1F5ECF7F0026D6D2 /* APay_UserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APay_UserUITests.m; sourceTree = "<group>"; };
 		81A2B8E11F5ECF7F0026D6D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81A2B8ED1F5ED1E60026D6D2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		81A9419A1F6BF6C700A97618 /* Calibre-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Medium.ttf"; sourceTree = "<group>"; };
+		81A9419B1F6BF6C700A97618 /* Calibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Regular.ttf"; sourceTree = "<group>"; };
+		81A9419C1F6BF6C700A97618 /* Calibre-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Semibold.ttf"; sourceTree = "<group>"; };
+		81A941A01F6BF8AC00A97618 /* UIFont+APFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+APFont.h"; sourceTree = "<group>"; };
+		81A941A11F6BF8AC00A97618 /* UIFont+APFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+APFont.m"; sourceTree = "<group>"; };
+		81A941A31F6C1D4200A97618 /* APPayResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPayResultVC.h; sourceTree = "<group>"; };
+		81A941A41F6C1D4200A97618 /* APPayResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPayResultVC.m; sourceTree = "<group>"; };
+		81A941A61F6C235400A97618 /* APPayResultHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPayResultHeaderCell.h; sourceTree = "<group>"; };
+		81A941A71F6C235400A97618 /* APPayResultHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPayResultHeaderCell.m; sourceTree = "<group>"; };
+		81A941A91F6C26D700A97618 /* APModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APModel.h; sourceTree = "<group>"; };
+		81A941AA1F6C26D700A97618 /* APModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APModel.m; sourceTree = "<group>"; };
 		81E2E8051F6243BF0029DF39 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		81E2E8061F6243BF0029DF39 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		81E2E8091F6244380029DF39 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -164,6 +198,20 @@
 		81F08A2F1F63C896009B4DA9 /* APWelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWelcomeVC.m; sourceTree = "<group>"; };
 		81F08A321F63C8AE009B4DA9 /* APWelcomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APWelcomeModel.h; sourceTree = "<group>"; };
 		81F08A331F63C8AE009B4DA9 /* APWelcomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWelcomeModel.m; sourceTree = "<group>"; };
+		81F51B051F6B621D004697C5 /* APMainPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMainPopView.h; sourceTree = "<group>"; };
+		81F51B061F6B621D004697C5 /* APMainPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainPopView.m; sourceTree = "<group>"; };
+		81F51B081F6B65FC004697C5 /* APTopUpBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTopUpBtn.h; sourceTree = "<group>"; };
+		81F51B091F6B65FC004697C5 /* APTopUpBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTopUpBtn.m; sourceTree = "<group>"; };
+		81F51B0C1F6BA737004697C5 /* APUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APUIViewController.h; sourceTree = "<group>"; };
+		81F51B0D1F6BA737004697C5 /* APUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APUIViewController.m; sourceTree = "<group>"; };
+		81F51B0F1F6BA756004697C5 /* APNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNavigationController.h; sourceTree = "<group>"; };
+		81F51B101F6BA756004697C5 /* APNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNavigationController.m; sourceTree = "<group>"; };
+		81F51B121F6BC009004697C5 /* APPayWrongPwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPayWrongPwdView.h; sourceTree = "<group>"; };
+		81F51B131F6BC009004697C5 /* APPayWrongPwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPayWrongPwdView.m; sourceTree = "<group>"; };
+		81F74FF01F6CB94900A75668 /* APPayResultDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPayResultDetailCell.h; sourceTree = "<group>"; };
+		81F74FF11F6CB94900A75668 /* APPayResultDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPayResultDetailCell.m; sourceTree = "<group>"; };
+		81F74FF31F6CBFC800A75668 /* APPayNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPayNoteCell.h; sourceTree = "<group>"; };
+		81F74FF41F6CBFC800A75668 /* APPayNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPayNoteCell.m; sourceTree = "<group>"; };
 		9E317663FAA998E9C6CE3218 /* Pods-APay_User.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APay_User.release.xcconfig"; path = "Pods/Target Support Files/Pods-APay_User/Pods-APay_User.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +302,10 @@
 				813D0BA71F66CFFB00022A10 /* APMainCell.m */,
 				812F6CFC1F683DFB0031CC8F /* APMainScrollCell.h */,
 				812F6CFD1F683DFB0031CC8F /* APMainScrollCell.m */,
+				81F51B051F6B621D004697C5 /* APMainPopView.h */,
+				81F51B061F6B621D004697C5 /* APMainPopView.m */,
+				81F51B081F6B65FC004697C5 /* APTopUpBtn.h */,
+				81F51B091F6B65FC004697C5 /* APTopUpBtn.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,6 +359,8 @@
 		814EF4EA1F69716F003CDE7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81A941A91F6C26D700A97618 /* APModel.h */,
+				81A941AA1F6C26D700A97618 /* APModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,6 +370,8 @@
 			children = (
 				814EF4ED1F6971EF003CDE7F /* APSetAmountVC.h */,
 				814EF4EE1F6971EF003CDE7F /* APSetAmountVC.m */,
+				81A941A31F6C1D4200A97618 /* APPayResultVC.h */,
+				81A941A41F6C1D4200A97618 /* APPayResultVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -323,6 +379,16 @@
 		814EF4EC1F69716F003CDE7F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				810B56731F6A7F91008A60A1 /* APEnterPaymentView.h */,
+				810B56741F6A7F91008A60A1 /* APEnterPaymentView.m */,
+				81F51B121F6BC009004697C5 /* APPayWrongPwdView.h */,
+				81F51B131F6BC009004697C5 /* APPayWrongPwdView.m */,
+				81A941A61F6C235400A97618 /* APPayResultHeaderCell.h */,
+				81A941A71F6C235400A97618 /* APPayResultHeaderCell.m */,
+				81F74FF01F6CB94900A75668 /* APPayResultDetailCell.h */,
+				81F74FF11F6CB94900A75668 /* APPayResultDetailCell.m */,
+				81F74FF31F6CBFC800A75668 /* APPayNoteCell.h */,
+				81F74FF41F6CBFC800A75668 /* APPayNoteCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -359,6 +425,10 @@
 				813D0B9A1F66BA7100022A10 /* APRegisterInfoVC.h */,
 				813D0B9B1F66BA7100022A10 /* APRegisterInfoVC.m */,
 				813D0B9C1F66BA7100022A10 /* APRegisterInfoVC.xib */,
+				81A135251F6ABDFF00B89C3B /* APSetPaymentPWDVC.h */,
+				81A135261F6ABDFF00B89C3B /* APSetPaymentPWDVC.m */,
+				81A135281F6AC3BC00B89C3B /* APSetCompletedPaymentPwdVC.h */,
+				81A135291F6AC3BC00B89C3B /* APSetCompletedPaymentPwdVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -411,6 +481,7 @@
 		81A2B8BA1F5ECF7E0026D6D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				81A941991F6BF6C700A97618 /* Font */,
 				81A2B8BB1F5ECF7E0026D6D2 /* main.m */,
 				81F08A131F63B8DA009B4DA9 /* InfoPlist.strings */,
 			);
@@ -462,6 +533,8 @@
 				81F08A171F63BABE009B4DA9 /* UIColor+Utility.m */,
 				814EF4F01F69790B003CDE7F /* UITextView+Placeholder.h */,
 				814EF4F11F69790B003CDE7F /* UITextView+Placeholder.m */,
+				81A941A01F6BF8AC00A97618 /* UIFont+APFont.h */,
+				81A941A11F6BF8AC00A97618 /* UIFont+APFont.m */,
 			);
 			path = Categoties;
 			sourceTree = "<group>";
@@ -498,6 +571,7 @@
 		81A2B8F61F5ED5620026D6D2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				81F51B0B1F6BA71E004697C5 /* BaseClass */,
 				814EF4E91F69716F003CDE7F /* Pay */,
 				813D0B9F1F66CE7C00022A10 /* MainView */,
 				819ED52B1F64108600934C8B /* Login */,
@@ -522,6 +596,16 @@
 				81F029CF1F65752B006C98E3 /* KMNavigationBarTransition */,
 			);
 			path = Vendors;
+			sourceTree = "<group>";
+		};
+		81A941991F6BF6C700A97618 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				81A9419A1F6BF6C700A97618 /* Calibre-Medium.ttf */,
+				81A9419B1F6BF6C700A97618 /* Calibre-Regular.ttf */,
+				81A9419C1F6BF6C700A97618 /* Calibre-Semibold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		81F029CF1F65752B006C98E3 /* KMNavigationBarTransition */ = {
@@ -566,6 +650,50 @@
 			sourceTree = "<group>";
 		};
 		81F08A301F63C896009B4DA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81F51B0B1F6BA71E004697C5 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				81F74FF61F6CC48000A75668 /* Setting */,
+				81F51B0C1F6BA737004697C5 /* APUIViewController.h */,
+				81F51B0D1F6BA737004697C5 /* APUIViewController.m */,
+				81F51B0F1F6BA756004697C5 /* APNavigationController.h */,
+				81F51B101F6BA756004697C5 /* APNavigationController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		81F74FF61F6CC48000A75668 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				81F74FF71F6CC48000A75668 /* Model */,
+				81F74FF81F6CC48000A75668 /* VC */,
+				81F74FF91F6CC48000A75668 /* View */,
+			);
+			name = Setting;
+			path = APay_User/Class/Modules/Setting;
+			sourceTree = SOURCE_ROOT;
+		};
+		81F74FF71F6CC48000A75668 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81F74FF81F6CC48000A75668 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		81F74FF91F6CC48000A75668 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -696,6 +824,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				813D0B9E1F66BA7100022A10 /* APRegisterInfoVC.xib in Resources */,
+				81A9419E1F6BF6C700A97618 /* Calibre-Regular.ttf in Resources */,
+				81A9419F1F6BF6C700A97618 /* Calibre-Semibold.ttf in Resources */,
 				81F029CE1F6569C7006C98E3 /* APRegisterVC.xib in Resources */,
 				81A2B8CA1F5ECF7F0026D6D2 /* LaunchScreen.storyboard in Resources */,
 				81F029DD1F657860006C98E3 /* APVerificationCodeVC.xib in Resources */,
@@ -703,6 +833,7 @@
 				814EF4D71F6961A8003CDE7F /* NBZXingQRViewController.xib in Resources */,
 				81F08A111F63B8DA009B4DA9 /* InfoPlist.strings in Resources */,
 				81A2B8C71F5ECF7F0026D6D2 /* Assets.xcassets in Resources */,
+				81A9419D1F6BF6C700A97618 /* Calibre-Medium.ttf in Resources */,
 				819ED52A1F63D55B00934C8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,6 +884,7 @@
 				"${BUILT_PRODUCTS_DIR}/BHInfiniteScrollView/BHInfiniteScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
 				"${BUILT_PRODUCTS_DIR}/LKDBHelper/LKDBHelper.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -767,6 +899,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BHInfiniteScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LKDBHelper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -803,9 +936,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				813D0BA51F66CE9200022A10 /* APMainViewVC.m in Sources */,
+				81F74FF51F6CBFC800A75668 /* APPayNoteCell.m in Sources */,
 				819ED51D1F63D15000934C8B /* UIView+Frame.m in Sources */,
+				81A941A21F6BF8AC00A97618 /* UIFont+APFont.m in Sources */,
 				81F08A341F63C8AE009B4DA9 /* APWelcomeModel.m in Sources */,
 				81F029D71F65752B006C98E3 /* UINavigationController+KMNavigationBarTransition.m in Sources */,
+				81A941A81F6C235400A97618 /* APPayResultHeaderCell.m in Sources */,
 				81F08A271F63BF12009B4DA9 /* MBProgressHUD+MJ.m in Sources */,
 				81F08A181F63BABE009B4DA9 /* UIColor+Utility.m in Sources */,
 				81F029D61F65752B006C98E3 /* KMSwizzle.m in Sources */,
@@ -814,13 +950,23 @@
 				819ED5351F64199D00934C8B /* APLoginViewController.m in Sources */,
 				813D0BA91F66CFFB00022A10 /* APMainCell.m in Sources */,
 				814EF4D81F6961A8003CDE7F /* HSScanView.m in Sources */,
+				81A941A51F6C1D4200A97618 /* APPayResultVC.m in Sources */,
+				81F74FF21F6CB94900A75668 /* APPayResultDetailCell.m in Sources */,
+				81F51B0E1F6BA737004697C5 /* APUIViewController.m in Sources */,
+				81A941AB1F6C26D700A97618 /* APModel.m in Sources */,
+				81F51B141F6BC009004697C5 /* APPayWrongPwdView.m in Sources */,
 				81F08A051F63B587009B4DA9 /* APTools.m in Sources */,
 				814EF4EF1F6971EF003CDE7F /* APSetAmountVC.m in Sources */,
 				813D0B9D1F66BA7100022A10 /* APRegisterInfoVC.m in Sources */,
+				81A135271F6ABDFF00B89C3B /* APSetPaymentPWDVC.m in Sources */,
 				81A2B8BF1F5ECF7E0026D6D2 /* AppDelegate.m in Sources */,
 				81F029DC1F657860006C98E3 /* APVerificationCodeVC.m in Sources */,
 				81F08A1B1F63BBFF009B4DA9 /* APNetManager.m in Sources */,
 				81F08A081F63B592009B4DA9 /* APHeaders.m in Sources */,
+				81F51B0A1F6B65FC004697C5 /* APTopUpBtn.m in Sources */,
+				810B56751F6A7F91008A60A1 /* APEnterPaymentView.m in Sources */,
+				81F51B071F6B621D004697C5 /* APMainPopView.m in Sources */,
+				81F51B111F6BA756004697C5 /* APNavigationController.m in Sources */,
 				81E2E8071F6243BF0029DF39 /* NSString+Size.m in Sources */,
 				81F029CD1F6569C7006C98E3 /* APRegisterVC.m in Sources */,
 				812F6CFE1F683DFB0031CC8F /* APMainScrollCell.m in Sources */,
@@ -829,6 +975,7 @@
 				81F08A311F63C896009B4DA9 /* APWelcomeVC.m in Sources */,
 				814EF4D61F6961A8003CDE7F /* NBZXingQRViewController.m in Sources */,
 				81F08A1E1F63BDC4009B4DA9 /* APPManager.m in Sources */,
+				81A1352A1F6AC3BC00B89C3B /* APSetCompletedPaymentPwdVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,6 +1151,7 @@
 				DEVELOPMENT_TEAM = EC48L54VQP;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/APay_User/PrefixHeader.pch";
 				INFOPLIST_FILE = APay_User/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.api.APay-User";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1018,6 +1166,7 @@
 				DEVELOPMENT_TEAM = EC48L54VQP;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/APay_User/PrefixHeader.pch";
 				INFOPLIST_FILE = APay_User/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.api.APay-User";
 				PRODUCT_NAME = "$(TARGET_NAME)";

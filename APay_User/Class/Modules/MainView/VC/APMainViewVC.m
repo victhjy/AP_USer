@@ -11,6 +11,10 @@
 #import "APMainModel.h"
 #import "APMainScrollCell.h"
 #import "NBZXingQRViewController.h"
+#import "APMainPopView.h"
+#import "APNavigationController.h"
+#import "APLoginViewController.h"
+
 @interface APMainViewVC ()<UITableViewDelegate,UITableViewDataSource,NBZXingQRViewControllerDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSMutableArray *tableViewArr;
@@ -29,12 +33,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
-    self.title=@"123";
+    self.title=@"PAY";
     [self.view addSubview:self.tableView];
     self.automaticallyAdjustsScrollViewInsets=NO;
+    self.navigationItem.hidesBackButton=YES;
+    
+    
+    if (self.firstShow) {
+        [self showPop];
+    }
     // Do any additional setup after loading the view.
 }
 
+- (void)showPop {
+    CGFloat popWidth = kWidth - 40;
+    APMainPopView *popView = [[APMainPopView alloc]initWithFrame:CGRectMake(0, 0, popWidth, popWidth * 0.875)];
+    popView.center = CGPointMake(kWidth/2, kHeight/2);
+    popView.block=^{
+        [popView removeFromSuperview];
+        [MBProgressHUD showSuccess:@"topup"];
+        
+    };
+    [[UIApplication sharedApplication].keyWindow addSubview:popView];
+}
 
 #pragma mark - TableView delegate
 
@@ -107,6 +128,13 @@
 
 - (void)scrollImageClicked:(NSInteger)index {
     APLog(@"%ld",index);
+    if (index == 2) {
+        [self showPop];
+    }
+    else if (index == 1){
+        APNavigationController *navVC=[[APNavigationController alloc]initWithRootViewController:[[APLoginViewController alloc]init]];
+        [UIApplication sharedApplication].keyWindow.rootViewController=navVC;
+    }
 }
 
 

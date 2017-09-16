@@ -38,14 +38,16 @@
  */
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *blackBackgroundViewsArray;
 
+@property(nonatomic, assign) BOOL isJump;
+
 @end
 
 @implementation NBZXingQRViewController
 #pragma mark - lifeCircle
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.title=L(@"Pay By QR Code");
-    
+    self.title=L(@"Pay By QR Code");
+    self.isJump = NO;
 #if TARGET_IPHONE_SIMULATOR
     self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"下一步" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonItemAction:)];
 #else
@@ -64,13 +66,15 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    self.title=@"";
+    [super viewWillDisappear:animated];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.title=L(@"Pay By QR Code");
+    self.isJump = NO;
+    if ([self.scanView respondsToSelector:@selector(startScanTimer)]) {
+        [self.scanView startScanTimer];
+    }
 }
 
 #pragma mark - rightBarButtonItemAction
@@ -82,15 +86,21 @@
 
 #pragma mark - ZXCaptureDelegate
 - (void)captureResult:(ZXCapture *)capture result:(ZXResult *)result {
-//    if ([_delegate respondsToSelector:@selector(nBZXingQRViewController:result:)]) {
-        [capture stop];
-        [self.scanView stopScanTimer];
-        if (!self.scanComplete) {
-            self.scanComplete=YES;
-//            [self.navigationController popViewControllerAnimated:YES];
-//            [_delegate nBZXingQRViewController:self result:result];
-        }
-//    }
+    [capture stop];
+    [self.scanView stopScanTimer];
+    if (!self.scanComplete) {
+        self.scanComplete=YES;
+    }
+    if (!self.isJump) {
+        APSetAmountVC *amountVC=[[APSetAmountVC alloc]init];
+        [self.navigationController pushViewController:amountVC animated:YES];
+        self.isJump = YES;
+        [capture start];
+    }
+    else{
+        
+    }
+    
 }
 #pragma mark - PriVateMethod
 - (void)didReceiveMemoryWarning {

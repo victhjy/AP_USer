@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APUIViewController.h"
 @class NBZXingQRViewController;
 #import "ZXResult.h"
 @protocol NBZXingQRViewControllerDelegate <NSObject>
@@ -15,6 +16,6 @@
 
 @end
 
-@interface NBZXingQRViewController : UIViewController
+@interface NBZXingQRViewController : APUIViewController
 @property(nonatomic,weak)id<NBZXingQRViewControllerDelegate> delegate;
 @end

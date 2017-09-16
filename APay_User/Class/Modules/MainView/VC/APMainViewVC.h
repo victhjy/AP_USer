@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APUIViewController.h"
 
-@interface APMainViewVC : UIViewController
+@interface APMainViewVC : APUIViewController
 
+@property(nonatomic, assign) BOOL firstShow;
 @end

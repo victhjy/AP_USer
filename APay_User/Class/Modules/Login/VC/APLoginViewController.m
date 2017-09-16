@@ -52,13 +52,21 @@
     
     self.phoneNumTf.keyboardType=UIKeyboardTypeNamePhonePad;
     
-    self.phoneNumTf.placeholder=L(@"Phone Number");
-    self.passwordTf.placeholder=L(@"Password");
+    if (isIndonesia) {
+        self.phoneNumTf.placeholder = @"Nomor Telepon";
+        self.passwordTf.placeholder=@"Kata Sandi";
+        [self.loginBtn setTitle:@"MASUK" forState:UIControlStateNormal];
+    }
+    else{
+        self.phoneNumTf.placeholder =@"Phone Number";
+        self.passwordTf.placeholder=@"Password";
+        [self.loginBtn setTitle:@"SIGN IN" forState:UIControlStateNormal];
+    }
     
     self.loginBtn.layer.masksToBounds=YES;
     self.loginBtn.layer.cornerRadius=4;
 
-    [self.loginBtn setTitle:L(@"SIGN IN") forState:UIControlStateNormal];
+    
     [self.loginBtn setTitleColor:ThemeColor forState:UIControlStateNormal];
     self.loginBtn.titleLabel.font=self.registerLbl.font;
     
@@ -95,7 +103,10 @@
 }
 - (IBAction)loginAction:(id)sender {
     APMainViewVC *mainVC=[[APMainViewVC alloc]init];
-    [self.navigationController pushViewController:mainVC animated:YES];
+    mainVC.firstShow = YES;
+    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:mainVC];
+    [UIApplication sharedApplication].keyWindow.rootViewController = nav;
+//    [self.navigationController pushViewController:mainVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

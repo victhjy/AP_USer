@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APUIViewController.h"
 
-@interface APSetAmountVC : UIViewController
+@interface APSetAmountVC : APUIViewController
 
 @end

@@ -35,4 +35,43 @@
 "Set Amount" = "Set Amount";
 "Amount" = "Amount";
 "Add note here.." = "Add note here..";
+"CONFIRM" = "CONFIRM";
+"Enter Payment Password" = "Enter Payment Password";
+"Set Payment Password" = "Set Payment Password";
+"For your safety, you need to set your payment password. Input your payment password when you make transaction" = "For your safety, you need to set your payment password. Input your payment password when you make transaction";
+"Hi %@, this is your payment password. Please keep it carefully" = "Hi %@, this is your payment password. Please keep it carefully";
+"Balance" = "Balance";
+"TOP UP" = "TOP UP";
+"PAY" = "PAY";
+"Transactions" = "Transactions";
+"My Account" = "My Account";
+"Settings" = "Settings";
+"Input Amount" = "Input Amount";
+"WELCOME" = "WELCOME";
+"Hi %@, Thank you for joining us. Top up your balance and enjoy paying cashless and cardless." = "Hi %@, Thank you for joining us. Top up your balance and enjoy paying cashless and cardless.";
+"Top Up" = "Top Up";
+"Wrong Password" = "Wrong Password";
+"Your Payment Password is wrong, please try again after" = "Your Payment Password is wrong, please try again after";
+"Failed" = "Failed";
+"Success" = "Success";
+"Payment Details" = "Payment Details";
+"Try Again" = "Try Again";
+"Payment Method" = "Payment Method";
+"Date" = "Date";
+"Transaction Number" = "Transaction Number";
+"Merchant Order Number" = "Merchant Order Number";
+"My note" = "My note";
+
+
+
+
+
+
+
+
+
+
+
+
+
 

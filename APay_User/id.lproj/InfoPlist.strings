@@ -34,6 +34,38 @@
 "Set Amount" = "Setel Nominal";
 "Amount" = "Jumlah";
 "Add note here.." = "Tulis catatan disini..";
+"CONFIRM" = "KONFIRMASI";
+"Enter Payment Password" = "Masukkan Kode Sandi Pembayaran";
+"Set Payment Password" = "Atur Kode Sandi Pembayaran";
+"For your safety, you need to set your payment password. Input your payment password when you make transaction" = "Atur kode sandi pembayaran demi keamanan transaksi anda. Kode sandi pembayaran digunakan pada saat anda melakukan transaksi";
+"Hi %@, this is your payment password. Please keep it carefully" = "Hi %@, ini adalah kode sandi pembayaran anda. Mohon untuk dijaga dengan baik";
+"Balance" = "Saldo";
+"TOP UP" = "ISI SALDO";
+"PAY" = "BAYAR";
+"Transactions" = "Transaksi";
+"My Account" = "Akun Saya";
+"Settings" = "Pengaturan";
+"Input Amount" = "Masukkan Nominal";
+"WELCOME" = "SELAMAT DATANG";
+"Hi %@, Thank you for joining us. Top up your balance and enjoy paying cashless and cardless." = "Hi %@, Terima kasih telah bergabung dengan kami. Isi ulang saldo anda dan nikmati pembayaran tanpa tunai dan kartu";
+"Top Up" = "Isi Saldo";
+"Wrong Password" = "Kode Sandi Salah";
+"Your Payment Password is wrong, please try again after" = "Kode Sandi Pembayaran anda salah, mohon coba lagi setelah";
+"Failed" = "Gagal";
+"Success" = "Berhasil";
+"Payment Details" = "Rincian Pembayaran";
+"Try Again" = "Coba Lagi";
+"Payment Method" = "Metode Pembayaran";
+"Date" = "Tanggal";
+"Transaction Number" = "Nomor Transaksi";
+"Merchant Order Number" = "Nomor Order Merchant";
+"My note" = "Catatan Saya";
+
+
+
+
+
+
 
 
 

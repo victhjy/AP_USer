@@ -14,9 +14,19 @@
 @property(nonatomic, assign) BOOL simulator;
 @property(nonatomic, assign) BOOL firstLogin;
 @property(nonatomic, strong) NSString *appVersion;
+@property(nonatomic, assign) double paymentTime;
 
 +(instancetype)share;
 
 - (void)recordHttpRequestLog:(NSString *)str;
+
+-(BOOL)isFirstLogin;
+-(NSString *)getPreferredLanguage;
+
+-(BOOL)isIndonesiaLanguage;
+
+-(double )paymentTime;
+
+-(void)setPaymentTime:(double )paymentTime;
 
 @end

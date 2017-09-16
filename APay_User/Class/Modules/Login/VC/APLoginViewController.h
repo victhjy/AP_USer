@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface APLoginViewController : UIViewController
+#import "APUIViewController.h"
+@interface APLoginViewController : APUIViewController
 
 @end

@@ -7,6 +7,14 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibre-Regular.ttf">
+            <string>Calibre-Regular</string>
+        </array>
+        <array key="Calibre-Semibold.ttf">
+            <string>Calibre-Semibold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="APLoginViewController">
             <connections>
@@ -38,7 +46,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njc-BY-cNY">
-                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -48,18 +56,18 @@
                         <constraint firstAttribute="height" constant="0.5" id="iHm-ix-HII"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testSmall" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-lX-EGk">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_inputpassword" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-lX-EGk">
                     <constraints>
-                        <constraint firstAttribute="width" constant="25" id="YRK-Bs-IPY"/>
-                        <constraint firstAttribute="height" constant="25" id="zsD-D5-8bM"/>
+                        <constraint firstAttribute="width" constant="20" id="YRK-Bs-IPY"/>
+                        <constraint firstAttribute="height" constant="20" id="zsD-D5-8bM"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QF-AI-mPy">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+62" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QF-AI-mPy">
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="BjW-lu-pOc"/>
                         <constraint firstAttribute="width" constant="40" id="GOw-tj-pxe"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -75,12 +83,12 @@
                         <constraint firstAttribute="height" constant="30" id="rsU-WQ-dMl"/>
                     </constraints>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eg-sq-A4k">
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="17"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81f-p7-iQC">
@@ -90,7 +98,7 @@
                     </constraints>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXi-kN-lGN">
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -107,17 +115,17 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Don't have any account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cS-ui-Ppa">
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="13"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exe-ud-eGf">
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-8W-aCy">
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -142,7 +150,7 @@
                 <constraint firstItem="rXi-kN-lGN" firstAttribute="top" secondItem="Xfk-c9-V44" secondAttribute="top" constant="10" id="Jh4-Tq-S3E"/>
                 <constraint firstItem="Xfk-c9-V44" firstAttribute="centerY" secondItem="QF7-aB-43B" secondAttribute="centerY" id="Kbl-cZ-U2t"/>
                 <constraint firstItem="QF7-aB-43B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KrC-pF-Fa9"/>
-                <constraint firstItem="6ra-lX-EGk" firstAttribute="leading" secondItem="Xfk-c9-V44" secondAttribute="leading" constant="10" id="NoV-Ny-zRd"/>
+                <constraint firstItem="6ra-lX-EGk" firstAttribute="leading" secondItem="Xfk-c9-V44" secondAttribute="leading" constant="20" id="NoV-Ny-zRd"/>
                 <constraint firstItem="nKi-uz-J6S" firstAttribute="trailing" secondItem="3eg-sq-A4k" secondAttribute="trailing" id="QhX-jk-d0P"/>
                 <constraint firstItem="Xfk-c9-V44" firstAttribute="top" secondItem="nKi-uz-J6S" secondAttribute="bottom" constant="5" id="Rpl-wV-2Zb"/>
                 <constraint firstItem="njc-BY-cNY" firstAttribute="centerX" secondItem="QF7-aB-43B" secondAttribute="centerX" id="S0v-RG-l2w"/>
@@ -152,7 +160,7 @@
                 <constraint firstItem="81f-p7-iQC" firstAttribute="trailing" secondItem="Xfk-c9-V44" secondAttribute="trailing" id="a2E-te-TO3"/>
                 <constraint firstItem="ExP-MM-9m2" firstAttribute="top" secondItem="1QF-AI-mPy" secondAttribute="bottom" constant="10" id="bEI-9p-T6S"/>
                 <constraint firstItem="QF7-aB-43B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dtU-cF-a3y"/>
-                <constraint firstItem="6ra-lX-EGk" firstAttribute="bottom" secondItem="Xfk-c9-V44" secondAttribute="bottom" constant="-5" id="f4C-xH-Iww"/>
+                <constraint firstItem="6ra-lX-EGk" firstAttribute="bottom" secondItem="Xfk-c9-V44" secondAttribute="bottom" constant="-10" id="f4C-xH-Iww"/>
                 <constraint firstItem="Exe-ud-eGf" firstAttribute="centerX" secondItem="8cS-ui-Ppa" secondAttribute="centerX" id="fI9-CW-brx"/>
                 <constraint firstItem="rXi-kN-lGN" firstAttribute="trailing" secondItem="Xfk-c9-V44" secondAttribute="trailing" id="fwK-Cb-wHf"/>
                 <constraint firstItem="81f-p7-iQC" firstAttribute="bottom" secondItem="Xfk-c9-V44" secondAttribute="bottom" constant="-10" id="hTK-mi-1R3"/>
@@ -170,8 +178,8 @@
         </view>
     </objects>
     <resources>
+        <image name="ic_inputpassword" width="16" height="20"/>
         <image name="loginBg" width="369" height="648"/>
         <image name="testBig" width="217" height="159"/>
-        <image name="testSmall" width="30" height="30"/>
     </resources>
 </document>

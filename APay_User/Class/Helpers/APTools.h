@@ -23,4 +23,6 @@
 //字典、数组转json
 +(NSString *)convertToJsonData:(id )dict;
 
++(NSString *)doubleToDateStr:(double)doub;
+
 @end

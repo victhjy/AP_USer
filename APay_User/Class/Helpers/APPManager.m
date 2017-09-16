@@ -6,7 +6,7 @@
 //  Copyright © 2017年 jinx. All rights reserved.
 //
 #define kFirstLogin @"kFirstLogin"
-
+#define kWrongPwdTime @"kWrongPwdTime"
 
 #import "APPManager.h"
 
@@ -107,5 +107,42 @@
     
     return _appVersion;
 }
+
+- (NSString*)getPreferredLanguage
+{
+    NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];
+    NSArray* languages = [defs objectForKey:@"AppleLanguages"];
+    NSString* preferredLang = [languages objectAtIndex:0];
+    return preferredLang;
+}
+
+-(BOOL)isIndonesiaLanguage{
+    if ([[self getPreferredLanguage] isEqualToString:@"id-CN"]) {
+        return YES;
+    }
+    else{
+        return NO;
+    }
+}
+
+-(void)setPaymentTime:(double )paymentTime{
+    double targetTimestamp = paymentTime + 21;
+    [[NSUserDefaults standardUserDefaults] setDouble:targetTimestamp forKey:kWrongPwdTime];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+-(double )paymentTime{
+    double cacheTime;
+        cacheTime = [[NSUserDefaults standardUserDefaults] doubleForKey:kWrongPwdTime];
+    
+    if (cacheTime && cacheTime > [NSDate timeIntervalSinceReferenceDate]) {
+        return cacheTime - [[NSDate date] timeIntervalSince1970];
+    }
+    else{
+        return 0;
+    }
+}
+
+
 
 @end

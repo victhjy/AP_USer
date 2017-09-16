@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface APRegisterVC : UIViewController
+#import "APUIViewController.h"
+@interface APRegisterVC : APUIViewController
 
 @end

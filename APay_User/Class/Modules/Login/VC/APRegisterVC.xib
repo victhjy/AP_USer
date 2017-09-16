@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibre-Regular.ttf">
+            <string>Calibre-Regular</string>
+        </array>
+        <array key="Calibre-Semibold.ttf">
+            <string>Calibre-Semibold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="APRegisterVC">
             <connections>
@@ -25,7 +33,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-gT-Jfh">
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -43,7 +51,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJZ-Ta-BAN">
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -52,23 +60,23 @@
                         <constraint firstAttribute="height" constant="25" id="UOl-Eu-IxU"/>
                     </constraints>
                     <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="16"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signing up means that you agree with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWp-O6-3eU">
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8E-iC-0f7">
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKe-IH-pJF">
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEXT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ow-hW-kwC">
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -84,12 +92,12 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="mJZ-Ta-BAN" firstAttribute="leading" secondItem="lpJ-Pc-3ET" secondAttribute="leading" id="24d-yG-iLs"/>
-                <constraint firstItem="gsx-gT-Jfh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="2tX-Lb-IGF"/>
+                <constraint firstItem="gsx-gT-Jfh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="2tX-Lb-IGF"/>
                 <constraint firstItem="mJZ-Ta-BAN" firstAttribute="trailing" secondItem="cbl-7l-uSt" secondAttribute="trailing" id="4qB-dc-0tU"/>
                 <constraint firstItem="vWp-O6-3eU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="192" id="99n-75-NXY"/>
                 <constraint firstItem="vWp-O6-3eU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ach-Zr-YXO"/>
                 <constraint firstItem="mJZ-Ta-BAN" firstAttribute="bottom" secondItem="lpJ-Pc-3ET" secondAttribute="bottom" constant="-10" id="Br5-bf-GJl"/>
-                <constraint firstItem="lpJ-Pc-3ET" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="CJQ-Ml-0Fq"/>
+                <constraint firstItem="lpJ-Pc-3ET" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="CJQ-Ml-0Fq"/>
                 <constraint firstItem="cbl-7l-uSt" firstAttribute="bottom" secondItem="lpJ-Pc-3ET" secondAttribute="bottom" constant="-10" id="DYe-6f-rej"/>
                 <constraint firstItem="kKe-IH-pJF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fqx-9L-T3T"/>
                 <constraint firstItem="S8E-iC-0f7" firstAttribute="top" secondItem="vWp-O6-3eU" secondAttribute="bottom" constant="5" id="Fr9-Uf-8iv"/>
@@ -100,8 +108,8 @@
                 <constraint firstItem="gsx-gT-Jfh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="ci4-dD-odV"/>
                 <constraint firstItem="IyV-vn-SNl" firstAttribute="trailing" secondItem="lpJ-Pc-3ET" secondAttribute="trailing" id="fJv-R1-EXN"/>
                 <constraint firstAttribute="bottom" secondItem="kKe-IH-pJF" secondAttribute="bottom" id="ocf-oh-bkf"/>
-                <constraint firstItem="IyV-vn-SNl" firstAttribute="bottom" secondItem="cbl-7l-uSt" secondAttribute="bottom" id="qyu-Dp-rf1"/>
-                <constraint firstAttribute="trailing" secondItem="lpJ-Pc-3ET" secondAttribute="trailing" constant="40" id="r19-mJ-1ba"/>
+                <constraint firstItem="IyV-vn-SNl" firstAttribute="bottom" secondItem="cbl-7l-uSt" secondAttribute="bottom" constant="3" id="qyu-Dp-rf1"/>
+                <constraint firstAttribute="trailing" secondItem="lpJ-Pc-3ET" secondAttribute="trailing" constant="30" id="r19-mJ-1ba"/>
                 <constraint firstItem="kKe-IH-pJF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="vdm-yL-E3J"/>
                 <constraint firstItem="S8E-iC-0f7" firstAttribute="centerX" secondItem="vWp-O6-3eU" secondAttribute="centerX" id="zqz-Bp-DbK"/>
             </constraints>

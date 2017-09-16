@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface APWelcomeVC : UIViewController
+#import "APUIViewController.h"
+@interface APWelcomeVC : APUIViewController
 
 @end

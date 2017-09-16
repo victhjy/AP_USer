@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "APWelcomeVC.h"
 #import "APLoginViewController.h"
-
+#import "APNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,14 +21,14 @@
     // Override point for customization after application launch.
     
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    if ([APPManager share].firstLogin) {
+    if ([[APPManager share] isFirstLogin]) {
         self.window.rootViewController=[[APWelcomeVC alloc]init];
     }
     else{
-        UINavigationController *navVC=[[UINavigationController alloc]initWithRootViewController:[[APLoginViewController alloc]init]];
+        APNavigationController *navVC=[[APNavigationController alloc]initWithRootViewController:[[APLoginViewController alloc]init]];
         self.window.rootViewController=navVC;
     }
-    
+
     [self configNavigationBar];
     [self.window makeKeyWindow];
     return YES;

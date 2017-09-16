@@ -47,6 +47,15 @@
     self.agreeLbl.textColor=[UIColor lightGrayColor];
     self.termsAndServiceLbl.textColor=ThemeColor;
     
+    if (isIndonesia) {
+        self.title=@"Daftar";
+        self.phoneNumberLbl.text=@"Nomor Telepon";
+        self.textfield.placeholder=@"Masukkan Nomor Telepon";
+        self.nextLbl.text=L(@"LANJUT");
+        self.agreeLbl.text  = @"Dengan mendaftar, saya setuju dengan";
+        self.termsAndServiceLbl.text = @"Persyaratan Layanan Kami";
+    }
+    
     
     
     

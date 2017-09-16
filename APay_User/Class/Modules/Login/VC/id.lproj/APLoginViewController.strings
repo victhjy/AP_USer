@@ -4,3 +4,6 @@
 "rXi-kN-lGN.text" = "Lupa Kata Sandi?";
 "8cS-ui-Ppa.text" = "Tidak punya akun?";
 "Exe-ud-eGf.text" = "DAFTAR";
+"3eg-sq-A4k.placeholder" = "Nomor Telepon";
+"nKi-uz-J6S.placeholder" = "Kata Sandi";
+//"[sfh-20-tIo setTitle:@"SIGN IN" forState:UIControlStateNormal]" = "[sfh-20-tIo setTitle:@"MASUK" forState:UIControlStateNormal]"

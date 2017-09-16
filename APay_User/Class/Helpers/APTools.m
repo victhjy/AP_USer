@@ -81,6 +81,79 @@
     [mutStr replaceOccurrencesOfString:@"\n" withString:@"" options:NSLiteralSearch range:range2];
     
     return mutStr;
+}
+
++(NSString *)doubleToDateStr:(double)doub{
+    if (doub <= 0) {
+        return @"00:00:00";
+    }
+    NSString *firstStr;
+    NSString *secondStr;
+    NSString *thridStr;
+    double hour = doub/3600;
+    
+    int doubleInt = doub;
+    double minute = doubleInt/60;
+    
+    double second = doubleInt%60;
+    
+    NSString *hourStr =[NSString stringWithFormat:@"%f",hour];
+    if ([hourStr containsString:@"."]) {
+        NSArray *arr = [hourStr componentsSeparatedByString:@"."];
+        hourStr = arr[0];
+    }
+    if (hourStr.length == 0) {
+        firstStr = @"00";
+    }
+    else if (hourStr.length == 1){
+        firstStr = [NSString stringWithFormat:@"0%@",hourStr];
+    }
+    else if (hourStr.length == 2){
+        firstStr = hourStr;
+    }
+    else{
+        firstStr = hourStr;
+    }
+    
+    NSString *minuateStr =[NSString stringWithFormat:@"%f",minute];
+    if ([minuateStr containsString:@"."]) {
+        NSArray *arr = [minuateStr componentsSeparatedByString:@"."];
+        minuateStr = arr[0];
+    }
+    if (minuateStr.length == 0) {
+        secondStr = @"00";
+    }
+    else if (minuateStr.length == 1){
+        secondStr = [NSString stringWithFormat:@"0%@",minuateStr];
+    }
+    else if (minuateStr.length == 2){
+        secondStr = minuateStr;
+    }
+    else{
+        secondStr = minuateStr;
+    }
+    
+    NSString *secStr =[NSString stringWithFormat:@"%f",second];
+    if ([secStr containsString:@"."]) {
+        NSArray *arr = [secStr componentsSeparatedByString:@"."];
+        secStr = arr[0];
+    }
+
+    if (secStr.length == 0) {
+        thridStr = @"00";
+    }
+    else if (secStr.length == 1){
+        thridStr = [NSString stringWithFormat:@"0%@",secStr];
+    }
+    else if (secStr.length == 2){
+        thridStr = secStr;
+    }
+    else{
+        thridStr = secStr;
+    }
+    
+    return [NSString stringWithFormat:@"%@:%@:%@",firstStr,secondStr,thridStr];
+    
     
 }
 

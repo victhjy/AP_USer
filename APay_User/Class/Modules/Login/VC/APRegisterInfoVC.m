@@ -7,6 +7,7 @@
 //
 
 #import "APRegisterInfoVC.h"
+#import "APSetPaymentPWDVC.h"
 
 @interface APRegisterInfoVC ()
 @property (weak, nonatomic) IBOutlet UILabel *userNameLbl;
@@ -59,7 +60,22 @@
     [self.view addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
         [weakSelf.view endEditing:YES];
     }];
+    
+    self.bottomView.userInteractionEnabled = YES;
+    self.bottonNextLbl.userInteractionEnabled = YES;
+    
+    [self.bottonNextLbl addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        [weakSelf push];
+    }];
+    [self.bottomView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        [weakSelf push];
+    }];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)push {
+    APSetPaymentPWDVC *vc=[[APSetPaymentPWDVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

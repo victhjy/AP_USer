@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KVOController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>LKDBHelper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,6 +72,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>081B701811781CDCE44A13C08E6824B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F387C81B9C6168801142DA52B4EEFBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>251BAD17812F7EBF6532EACF66F941C3</key>
 		<dict>
 			<key>primary</key>
@@ -77,22 +92,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4118C6C16F064C9644C20F1DCFB14534</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>41FA54D12162DAD51D02FC58A2CD5034</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B50CBEA66A38A93B38C90DA09C6DB0F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>79D44D4E285561F13E7B2D117875250E</key>
+		<key>63AB64D5EBA636599BE8DCF7F093FC70</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -123,6 +128,11 @@
 			<true/>
 		</dict>
 		<key>E14A62900910444707A5504D25EC98DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1BB2FCBCF83B5DDB315512A21BC40B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

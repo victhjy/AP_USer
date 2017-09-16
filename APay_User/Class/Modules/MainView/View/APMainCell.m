@@ -29,7 +29,8 @@
         UIImageView *iconImage = [[UIImageView alloc]initWithFrame:CGRectMake(kWidth/3 * i + kWidth/9, 20, kWidth/9, kWidth/9)];
         UILabel *titleLbl=[[UILabel alloc]initWithFrame:CGRectMake(kWidth/3 * i, 30 + kWidth/9 + 10, kWidth / 3, 20)];
         titleLbl.textAlignment=1;
-        titleLbl.font=[UIFont systemFontOfSize:16];
+//        titleLbl.font=[UIFont systemFontOfSize:16];
+        titleLbl.font=[UIFont fontWithName:@"Calibre-Regular" size:16];
         
         iconImage.tag = 100+i;
         titleLbl.tag = 200+i;

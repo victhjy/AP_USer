@@ -10,6 +10,7 @@
 #import "APWelcomeVC.h"
 #import "APWelcomeModel.h"
 #import "APLoginViewController.h"
+#import "APNavigationController.h"
 @interface APWelcomeVC ()<UIScrollViewDelegate>
 @property(nonatomic, strong) UIScrollView *scrollView;
 @property(nonatomic, strong) NSMutableArray *dataArr;
@@ -55,7 +56,7 @@
     [self.view addSubview:self.scrollView];
     
     UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, kHeight - 59.5, kWidth * ViewCount, 0.5)];
-    line.backgroundColor=[UIColor whiteColor];
+    line.backgroundColor=[UIColor colorWithWhite:0.5 alpha:1];
     [self.view addSubview:line];
     
     for (NSInteger i = 0; i<self.dataArr.count; i++) {
@@ -148,13 +149,24 @@
     self.pageControl.currentPage = 0;
     self.pageControl.numberOfPages = ViewCount;
     [self.view addSubview:self.pageControl];
-
+    __weak __typeof(self)weakSelf = self;
+    [self.view addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        CGPoint touchP = [gestureRecoginzer locationInView:weakSelf.view];
+        if (touchP.y>kHeight  - 50) {
+            if (touchP.x < kWidth/2) {
+                [weakSelf skipBtnClicked:nil];
+            }
+            else{
+                [weakSelf nextBtnClicked:nil];
+            }
+        }
+    }];
 }
 
 #pragma mark - Skip Clicked
 
 - (void)skipBtnClicked:(UIButton *)btn {
-     UINavigationController *navVC=[[UINavigationController alloc]initWithRootViewController:[[APLoginViewController alloc]init]];
+     APNavigationController *navVC=[[APNavigationController alloc]initWithRootViewController:[[APLoginViewController alloc]init]];
     [UIApplication sharedApplication].keyWindow.rootViewController=navVC;
 }
 
@@ -164,6 +176,10 @@
     if (self.pageControl.currentPage != 2) {
         [self.scrollView setContentOffset:CGPointMake((self.pageControl.currentPage+1) * kWidth, 0) animated:YES];
         self.pageControl.currentPage ++ ;
+    }
+    else{
+        APNavigationController *navVC=[[APNavigationController alloc]initWithRootViewController:[[APLoginViewController alloc]init]];
+        [UIApplication sharedApplication].keyWindow.rootViewController=navVC;
     }
 }
 
