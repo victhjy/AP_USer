@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		810B56751F6A7F91008A60A1 /* APEnterPaymentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B56741F6A7F91008A60A1 /* APEnterPaymentView.m */; };
+		81279AD71F6FDEA50018268E /* APBalanceMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81279AD61F6FDEA50018268E /* APBalanceMainVC.m */; };
+		81279ADA1F6FEF570018268E /* APBalanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81279AD91F6FEF570018268E /* APBalanceCell.m */; };
+		81279AE11F70104A0018268E /* APTransactions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81279AE01F70104A0018268E /* APTransactions.m */; };
+		81279AE41F7012C90018268E /* VAG Rounded Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81279AE21F7012C90018268E /* VAG Rounded Bold.ttf */; };
+		81279AE51F7012C90018268E /* VAG Rounded Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81279AE31F7012C90018268E /* VAG Rounded Light.ttf */; };
 		812F6CFE1F683DFB0031CC8F /* APMainScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 812F6CFD1F683DFB0031CC8F /* APMainScrollCell.m */; };
 		813D0B9D1F66BA7100022A10 /* APRegisterInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 813D0B9B1F66BA7100022A10 /* APRegisterInfoVC.m */; };
 		813D0B9E1F66BA7100022A10 /* APRegisterInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813D0B9C1F66BA7100022A10 /* APRegisterInfoVC.xib */; };
@@ -96,6 +101,14 @@
 		5811F7E024261CC88791A310 /* Pods-APay_User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APay_User.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APay_User/Pods-APay_User.debug.xcconfig"; sourceTree = "<group>"; };
 		810B56731F6A7F91008A60A1 /* APEnterPaymentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APEnterPaymentView.h; sourceTree = "<group>"; };
 		810B56741F6A7F91008A60A1 /* APEnterPaymentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APEnterPaymentView.m; sourceTree = "<group>"; };
+		81279AD51F6FDEA50018268E /* APBalanceMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBalanceMainVC.h; sourceTree = "<group>"; };
+		81279AD61F6FDEA50018268E /* APBalanceMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBalanceMainVC.m; sourceTree = "<group>"; };
+		81279AD81F6FEF570018268E /* APBalanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBalanceCell.h; sourceTree = "<group>"; };
+		81279AD91F6FEF570018268E /* APBalanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBalanceCell.m; sourceTree = "<group>"; };
+		81279ADF1F70104A0018268E /* APTransactions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTransactions.h; sourceTree = "<group>"; };
+		81279AE01F70104A0018268E /* APTransactions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APTransactions.m; sourceTree = "<group>"; };
+		81279AE21F7012C90018268E /* VAG Rounded Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VAG Rounded Bold.ttf"; sourceTree = "<group>"; };
+		81279AE31F7012C90018268E /* VAG Rounded Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VAG Rounded Light.ttf"; sourceTree = "<group>"; };
 		812F6CFC1F683DFB0031CC8F /* APMainScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMainScrollCell.h; sourceTree = "<group>"; };
 		812F6CFD1F683DFB0031CC8F /* APMainScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainScrollCell.m; sourceTree = "<group>"; };
 		813D0B9A1F66BA7100022A10 /* APRegisterInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRegisterInfoVC.h; sourceTree = "<group>"; };
@@ -265,6 +278,136 @@
 				453E4523142606DB9D4E8EFE /* Pods_APay_User.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81279AC51F6FDB940018268E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				81279AC61F6FDB940018268E /* Model */,
+				81279AC71F6FDB940018268E /* VC */,
+				81279AC81F6FDB940018268E /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		81279AC61F6FDB940018268E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81279AC71F6FDB940018268E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		81279AC81F6FDB940018268E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81279ACD1F6FDD840018268E /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				81279ACE1F6FDD840018268E /* Model */,
+				81279ACF1F6FDD840018268E /* VC */,
+				81279AD01F6FDD840018268E /* View */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		81279ACE1F6FDD840018268E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81279ACF1F6FDD840018268E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				81279AD51F6FDEA50018268E /* APBalanceMainVC.h */,
+				81279AD61F6FDEA50018268E /* APBalanceMainVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		81279AD01F6FDD840018268E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81279AD81F6FEF570018268E /* APBalanceCell.h */,
+				81279AD91F6FEF570018268E /* APBalanceCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81279AD11F6FDD8D0018268E /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				81279AD21F6FDD8D0018268E /* Model */,
+				81279AD31F6FDD8D0018268E /* VC */,
+				81279AD41F6FDD8D0018268E /* View */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		81279AD21F6FDD8D0018268E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81279AD31F6FDD8D0018268E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		81279AD41F6FDD8D0018268E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81279ADB1F700C900018268E /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				81279ADC1F700C900018268E /* Model */,
+				81279ADD1F700C900018268E /* VC */,
+				81279ADE1F700C900018268E /* View */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		81279ADC1F700C900018268E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81279ADD1F700C900018268E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				81279ADF1F70104A0018268E /* APTransactions.h */,
+				81279AE01F70104A0018268E /* APTransactions.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		81279ADE1F700C900018268E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		813D0B9F1F66CE7C00022A10 /* MainView */ = {
@@ -571,6 +714,10 @@
 		81A2B8F61F5ED5620026D6D2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				81279ADB1F700C900018268E /* Transactions */,
+				81279AD11F6FDD8D0018268E /* MyAccount */,
+				81279ACD1F6FDD840018268E /* Balance */,
+				81279AC51F6FDB940018268E /* Setting */,
 				81F51B0B1F6BA71E004697C5 /* BaseClass */,
 				814EF4E91F69716F003CDE7F /* Pay */,
 				813D0B9F1F66CE7C00022A10 /* MainView */,
@@ -601,6 +748,8 @@
 		81A941991F6BF6C700A97618 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				81279AE21F7012C90018268E /* VAG Rounded Bold.ttf */,
+				81279AE31F7012C90018268E /* VAG Rounded Light.ttf */,
 				81A9419A1F6BF6C700A97618 /* Calibre-Medium.ttf */,
 				81A9419B1F6BF6C700A97618 /* Calibre-Regular.ttf */,
 				81A9419C1F6BF6C700A97618 /* Calibre-Semibold.ttf */,
@@ -659,45 +808,12 @@
 		81F51B0B1F6BA71E004697C5 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				81F74FF61F6CC48000A75668 /* Setting */,
 				81F51B0C1F6BA737004697C5 /* APUIViewController.h */,
 				81F51B0D1F6BA737004697C5 /* APUIViewController.m */,
 				81F51B0F1F6BA756004697C5 /* APNavigationController.h */,
 				81F51B101F6BA756004697C5 /* APNavigationController.m */,
 			);
 			path = BaseClass;
-			sourceTree = "<group>";
-		};
-		81F74FF61F6CC48000A75668 /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				81F74FF71F6CC48000A75668 /* Model */,
-				81F74FF81F6CC48000A75668 /* VC */,
-				81F74FF91F6CC48000A75668 /* View */,
-			);
-			name = Setting;
-			path = APay_User/Class/Modules/Setting;
-			sourceTree = SOURCE_ROOT;
-		};
-		81F74FF71F6CC48000A75668 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		81F74FF81F6CC48000A75668 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		81F74FF91F6CC48000A75668 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		AC062B36B7D495D68F5EC91E /* Pods */ = {
@@ -823,6 +939,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81279AE51F7012C90018268E /* VAG Rounded Light.ttf in Resources */,
 				813D0B9E1F66BA7100022A10 /* APRegisterInfoVC.xib in Resources */,
 				81A9419E1F6BF6C700A97618 /* Calibre-Regular.ttf in Resources */,
 				81A9419F1F6BF6C700A97618 /* Calibre-Semibold.ttf in Resources */,
@@ -833,6 +950,7 @@
 				814EF4D71F6961A8003CDE7F /* NBZXingQRViewController.xib in Resources */,
 				81F08A111F63B8DA009B4DA9 /* InfoPlist.strings in Resources */,
 				81A2B8C71F5ECF7F0026D6D2 /* Assets.xcassets in Resources */,
+				81279AE41F7012C90018268E /* VAG Rounded Bold.ttf in Resources */,
 				81A9419D1F6BF6C700A97618 /* Calibre-Medium.ttf in Resources */,
 				819ED52A1F63D55B00934C8B /* Main.storyboard in Resources */,
 			);
@@ -952,6 +1070,7 @@
 				814EF4D81F6961A8003CDE7F /* HSScanView.m in Sources */,
 				81A941A51F6C1D4200A97618 /* APPayResultVC.m in Sources */,
 				81F74FF21F6CB94900A75668 /* APPayResultDetailCell.m in Sources */,
+				81279AE11F70104A0018268E /* APTransactions.m in Sources */,
 				81F51B0E1F6BA737004697C5 /* APUIViewController.m in Sources */,
 				81A941AB1F6C26D700A97618 /* APModel.m in Sources */,
 				81F51B141F6BC009004697C5 /* APPayWrongPwdView.m in Sources */,
@@ -968,9 +1087,11 @@
 				81F51B071F6B621D004697C5 /* APMainPopView.m in Sources */,
 				81F51B111F6BA756004697C5 /* APNavigationController.m in Sources */,
 				81E2E8071F6243BF0029DF39 /* NSString+Size.m in Sources */,
+				81279AD71F6FDEA50018268E /* APBalanceMainVC.m in Sources */,
 				81F029CD1F6569C7006C98E3 /* APRegisterVC.m in Sources */,
 				812F6CFE1F683DFB0031CC8F /* APMainScrollCell.m in Sources */,
 				81A2B8BC1F5ECF7E0026D6D2 /* main.m in Sources */,
+				81279ADA1F6FEF570018268E /* APBalanceCell.m in Sources */,
 				81F029D81F65752B006C98E3 /* UIViewController+KMNavigationBarTransition.m in Sources */,
 				81F08A311F63C896009B4DA9 /* APWelcomeVC.m in Sources */,
 				814EF4D61F6961A8003CDE7F /* NBZXingQRViewController.m in Sources */,

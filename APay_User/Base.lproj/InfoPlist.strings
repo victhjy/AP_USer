@@ -61,10 +61,17 @@
 "Transaction Number" = "Transaction Number";
 "Merchant Order Number" = "Merchant Order Number";
 "My note" = "My note";
-
-
-
-
+"My Balance" = "My Balance";
+"Withdraw" = "Withdraw";
+"MON" = "MON";
+"TUE" = "TUE";
+"WED" = "WED";
+"THU" = "THU";
+"FRI" = "FRI";
+"SAT" = "SAT";
+"SUN" = "SUN";
+"Hi %@, your Top Up and Withdraw history will show up here" = "Hi %@, your Top Up and Withdraw history will show up here";
+"Hi %@, your transaction history will show up here, hope you could enjoy APay services everyday." = "Hi %@, your transaction history will show up here, hope you could enjoy APay services everyday.";
 
 
 

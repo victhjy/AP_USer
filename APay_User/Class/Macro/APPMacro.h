@@ -17,6 +17,12 @@
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1]
 #define popBgColor [UIColor colorWithWhite:0.1 alpha:0.3]
 
+#define isIphone4 kHeight == 480
+#define isIphone5 kHeight == 568
+#define isIphone6 kHeight == 667
+#define isIphone6p kHeight == 736
+
+
 //国际化字符串
 #undef L
 #define L(str) NSLocalizedString(str, nil)

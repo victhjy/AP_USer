@@ -60,9 +60,17 @@
 "Transaction Number" = "Nomor Transaksi";
 "Merchant Order Number" = "Nomor Order Merchant";
 "My note" = "Catatan Saya";
-
-
-
+"My Balance" = "Saldo Saya";
+"Withdraw" = "Tarik";
+"MON" = "SEN";
+"TUE" = "SEL";
+"WED" = "RAB";
+"THU" = "KAM";
+"FRI" = "JUM";
+"SAT" = "SAB";
+"SUN" = "MIN";
+"Hi %@, your Top Up and Withdraw history will show up here" = "Hi %@, Riwayat Isi Saldo dan Tarik Saldo kamu akan ditampilkan disini";
+"Hi %@, your transaction history will show up here, hope you could enjoy APay services everyday." = "Hi %@, riwayat transaksi kamu akan ditampilkan disini, selamat menggunakan servis transaksi dari APay";
 
 
 

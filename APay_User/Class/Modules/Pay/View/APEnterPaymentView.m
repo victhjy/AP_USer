@@ -19,6 +19,8 @@
 @property(nonatomic, strong) NSMutableArray *passwordItemArr;
 
 @property(nonatomic, strong) NSString *curPwd;
+
+@property(nonatomic, assign) BOOL couldJump;
 @end
 
 
@@ -49,6 +51,7 @@
 
 - (void)configSelf {
     self.backgroundColor= popBgColor;
+    self.couldJump = YES;
     
     self.bgView = [[UIView alloc]initWithFrame:_bgFrame];
     self.bgView.backgroundColor = [UIColor whiteColor];
@@ -141,7 +144,8 @@
                 [self wrongPwd];
             }
             else{
-                if (self.rightBlock) {
+                if (self.rightBlock && self.couldJump) {
+                    self.couldJump = NO;
                     self.rightBlock();
                 }
             }

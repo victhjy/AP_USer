@@ -14,6 +14,8 @@
 #import "APMainPopView.h"
 #import "APNavigationController.h"
 #import "APLoginViewController.h"
+#import "APBalanceMainVC.h"
+#import "APTransactions.h"
 
 @interface APMainViewVC ()<UITableViewDelegate,UITableViewDataSource,NBZXingQRViewControllerDelegate>
 @property(nonatomic, strong) UITableView *tableView;
@@ -33,7 +35,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
-    self.title=@"PAY";
+    
+    UIView *titleView = [[UIView alloc]initWithFrame:CGRectMake(0, 11, 60, 22)];
+    UIImageView *titleV =[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"apaytitle"]];
+    titleV.frame = CGRectMake(0, 0, 60, 22);
+    [titleView addSubview:titleV];
+//    titleView.backgroundColor = [UIColor redColor];
+    self.navigationItem.titleView = titleView;
     [self.view addSubview:self.tableView];
     self.automaticallyAdjustsScrollViewInsets=NO;
     self.navigationItem.hidesBackButton=YES;
@@ -49,8 +57,9 @@
     CGFloat popWidth = kWidth - 40;
     APMainPopView *popView = [[APMainPopView alloc]initWithFrame:CGRectMake(0, 0, popWidth, popWidth * 0.875)];
     popView.center = CGPointMake(kWidth/2, kHeight/2);
+    __weak __typeof(APMainPopView *)weakPopView = popView;
     popView.block=^{
-        [popView removeFromSuperview];
+        [weakPopView removeFromSuperview];
         [MBProgressHUD showSuccess:@"topup"];
         
     };
@@ -123,6 +132,14 @@
         NBZXingQRViewController *scanVC=[[NBZXingQRViewController alloc]init];
 //        scanVC.delegate=self;
         [self.navigationController pushViewController:scanVC animated:YES];
+    }
+    else if (index == 0){
+        APBalanceMainVC *balanceVC = [[APBalanceMainVC alloc]init];
+        [self.navigationController pushViewController:balanceVC animated:YES];
+    }
+    else if (index == 3){
+        APTransactions *transactionsVC = [[APTransactions alloc] init];
+        [self.navigationController pushViewController:transactionsVC animated:YES];
     }
 }
 

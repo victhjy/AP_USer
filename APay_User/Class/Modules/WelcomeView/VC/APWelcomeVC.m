@@ -27,15 +27,13 @@
 }
 
 - (void)initData {
-    NSArray *imageNames=@[@"testSmall",@"testBig",@"testBig"];
-    NSArray *subTitles = @[L(@"My Wallet"),@"",@""];
+    NSArray *imageNames=@[@"img_1",@"img_2",@"img_3"];
     NSArray *titles = @[L(@"All your daily expenses with APay, your cashless and cardless life starts from TODAY."),L(@"The more you use, the more you save"),L(@"Secure, Reliable, Convenient No worries for losing your wallet anymore")];
     
     self.dataArr=[NSMutableArray new];
     for (int i = 0;  i < ViewCount; i ++) {
         APWelcomeModel *model =[[APWelcomeModel alloc]init];
         model.imageName = imageNames[i];
-        model.midTitle = subTitles[i];
         model.title = titles[i];
         [self.dataArr addObject:model];
     }
@@ -64,18 +62,10 @@
         
         UIImageView *imageV = [[UIImageView alloc]initWithImage:[UIImage imageNamed:model.imageName]];
         [self.scrollView addSubview:imageV];
-        CGFloat imageW = 80;
-        imageV.frame = CGRectMake(i*kWidth + (kWidth-imageW)/2, kHeight/3 - imageW/2, imageW, imageW);
-        
-        if (i == 0) {
-            imageV.frame = CGRectMake(i*kWidth + (kWidth-imageW)/2, kHeight/3 - imageW/2, imageW, imageW/2);
-
-            UILabel *midLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(imageV.frame), kWidth, 25)];
-            midLabel.textAlignment=1;
-            midLabel.text=model.midTitle;
-            midLabel.textColor= [UIColor whiteColor];
-            [self.scrollView addSubview:midLabel];
-        }
+        CGFloat imageW = kWidth*0.55;
+        imageV.centerX = kWidth/2 + i*kWidth;
+        imageV.centerY = kHeight/3;
+//        imageV.frame = CGRectMake(i*kWidth + (kWidth-imageW)/2, kHeight/3 - imageW/2, imageW, imageW);
         CGSize labelSize = [model.title sizeWithFont:[UIFont systemFontOfSize:19] maxSize:CGSizeMake(kWidth - 80, kHeight/3)];
         UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(kWidth * i + 40, kHeight /2 +30, kWidth - 80, labelSize.height)];
         [self.scrollView addSubview:label];

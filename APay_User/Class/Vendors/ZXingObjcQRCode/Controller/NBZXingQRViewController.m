@@ -114,7 +114,8 @@
         make.top.left.right.bottom.equalTo(_scanSuperView);
     }];
     
-    UILabel *bottomLbl=[[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.scanSuperView.frame)-40, kWidth, 30)];
+    CGFloat scanBottom =kHeight /2 + kHeight*0.15;
+    UILabel *bottomLbl=[[UILabel alloc]initWithFrame:CGRectMake(0, scanBottom+20, kWidth, 30)];
     bottomLbl.textAlignment=1;
     bottomLbl.textColor = [UIColor whiteColor];
     bottomLbl.tag = 500;

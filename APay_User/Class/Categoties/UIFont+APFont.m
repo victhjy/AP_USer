@@ -25,12 +25,12 @@
 //    });
 //}
 +(UIFont *)systemFontOfSize:(CGFloat)fontSize{
-    return [UIFont fontWithName:@"Calibre-Regular" size:fontSize];
+    return [UIFont fontWithName:@"VAG Rounded" size:fontSize];
 }
 
 
 +(UIFont *)boldSystemFontOfSize:(CGFloat)fontSize{
-    return [UIFont fontWithName:@"Calibre-Semibold" size:fontSize];
+    return [UIFont fontWithName:@"VAGRounded" size:fontSize];
 }
 
 @end

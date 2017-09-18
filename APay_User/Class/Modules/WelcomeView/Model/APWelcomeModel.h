@@ -10,6 +10,5 @@
 
 @interface APWelcomeModel : NSObject
 @property(nonatomic, strong) NSString *imageName;
-@property(nonatomic, strong) NSString *midTitle;
 @property(nonatomic, strong) NSString *title;
 @end

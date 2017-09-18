@@ -33,11 +33,11 @@ static char kActionHandlerLongPressGestureKey;
     self.frame = frame;
 }
 
-- (CGFloat)right {
+- (CGFloat)ap_right {
     return self.frame.origin.x + self.frame.size.width;
 }
 
-- (void)setRight:(CGFloat)right {
+- (void)setAp_right:(CGFloat)right {
     CGRect frame = self.frame;
     frame.origin.x = right - frame.size.width;
     self.frame = frame;
