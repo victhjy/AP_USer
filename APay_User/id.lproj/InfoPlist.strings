@@ -78,6 +78,19 @@
 "Change Payment Password" = "Ubah Kode Sandi Pembayaran";
 "Logout" = "Keluar";
 "Complete Your ID" = "Lengkapi Data Anda";
+"Settings" = "Pengaturan";
+"Notifications" = "Notifikasi";
+"Terms & Conditions" = "Syarat & Ketentuan";
+"Privacy Policy" = "Kebijakan Privasi";
+
+//noti
+"Top Up +Rp.%@ Success!" = "Isi Ulang Saldo +Rp.%@ Berhasil!";
+"Withdraw -Rp.%@ Sucess!" = "Tarik Saldo -Rp.%@ Berhasil";
+"%@ Payment Success!" = "%@ Pembayaran Berhasil";
+"ID Card Verification Success!"  = "Verifikasi Kartu Identitas Berhasil!";
+"Your %@ Salary has arrived!" = "Gaji kamu bulan %@ sudah tiba!";
+"Welcome to APay, enjoy!!" = "Selamat Datang di APay!! Selamat menikmati!!";
+
 
 
 

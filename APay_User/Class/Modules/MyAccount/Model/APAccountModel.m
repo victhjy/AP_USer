@@ -26,6 +26,19 @@
         [arr addObject:model];
     }
     return arr;
+}
+
++(NSMutableArray *)settingDefaultArr{
+    NSArray *iconImageArr = @[@"ic_settingsnotify",@"ic_myaccountcompleteID",@"ic_terms",@"ic_terms"];
+    NSArray *menuNameArr = @[L(@"Notifications"),L(@"Terms & Conditions"),L(@"Privacy Policy")];
     
+    NSMutableArray *arr = [NSMutableArray new];
+    for (int i = 0; i < 3; i ++) {
+        APAccountModel *model = [[APAccountModel alloc]init];
+        model.menuImageStr = iconImageArr[i];
+        model.menuName = menuNameArr[i];
+        [arr addObject:model];
+    }
+    return arr;
 }
 @end

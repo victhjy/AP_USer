@@ -84,11 +84,11 @@
     [imageV addSubview:topUp];
     
     NSString *tipText = [NSString stringWithFormat:L(@"Hi %@, Thank you for joining us. Top up your balance and enjoy paying cashless and cardless."),@"user"];
-    CGSize tipSize = [tipText sizeWithFont:[UIFont systemFontOfSize:15] maxSize:CGSizeMake(bgView.width - 40, 200)];
+    CGSize tipSize = [tipText sizeWithFont:[UIFont systemFontOfSize:16] maxSize:CGSizeMake(bgView.width - 40, 200)];
     UILabel *tipLbl = [[UILabel alloc]initWithFrame:CGRectMake(20, bgView.height/2 + 20, bgView.width - 40, tipSize.height)];
     tipLbl.numberOfLines = 0;
     tipLbl.text = tipText;
-    tipLbl.font = [UIFont systemFontOfSize:15];
+    tipLbl.font = [UIFont systemFontOfSize:16];
     [bgView addSubview:tipLbl];
     
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(bgView.width - 20 - 40, bgView.height - 40 , 40, 40)];

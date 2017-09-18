@@ -79,9 +79,18 @@
 "Change Payment Password" = "Change Payment Password";
 "Logout" = "Logout";
 "Complete Your ID" = "Complete Your ID";
+"Settings" = "Settings";
+"Notifications" = "Notifications";
+"Terms & Conditions" = "Terms & Conditions";
+"Privacy Policy" = "Privacy Policy";
 
-
-
+//noti
+"Top Up +Rp.%@ Success!" = "Top Up +Rp.%@ Success!";
+"Withdraw -Rp.%@ Sucess!" = "Withdraw -Rp.%@ Sucess!";
+"%@ Payment Success!" = "%@ Payment Success!";
+"ID Card Verification Success!"  = "ID Card Verification Success!";
+"Your %@ Salary has arrived!" = "Your %@ Salary has arrived!";
+"Welcome to APay, enjoy!!" = "Welcome to APay, enjoy!!";
 
 
 

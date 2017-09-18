@@ -13,6 +13,6 @@
 @property(nonatomic, copy) NSString *menuImageStr;
 @property(nonatomic, copy) NSString *menuName;
 @property(nonatomic, assign) BOOL isVerified;
-
 +(NSMutableArray *)defaultArr;
++(NSMutableArray *)settingDefaultArr;
 @end

@@ -69,6 +69,7 @@
     
     [self.loginBtn setTitleColor:ThemeColor forState:UIControlStateNormal];
     self.loginBtn.titleLabel.font=self.registerLbl.font;
+    self.loginBtn.titleEdgeInsets = UIEdgeInsetsMake(5, 0, 0, 0);
     
     
     

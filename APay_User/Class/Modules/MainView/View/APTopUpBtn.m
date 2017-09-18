@@ -44,7 +44,7 @@
     topUpLbl.font =[UIFont boldSystemFontOfSize:16];
     topUpLbl.textColor = ThemeColor;
     topUpLbl.textAlignment = 1;
-    topUpLbl.center = CGPointMake(self.width/2, self.height/2);
+    topUpLbl.center = CGPointMake(self.width/2, self.height/2+2);
     [self addSubview:topUpLbl];
     
     UIBezierPath* linePath = [UIBezierPath bezierPath];

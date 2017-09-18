@@ -32,13 +32,12 @@
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.tableFooterView = [self footerView];
-//    self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     
     [self.view addSubview:self.tableView];
 }
 
 -(UIView *)footerView{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kWidth, kHeight - 64 - 5*44)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kWidth, kHeight - 64 - self.tableViewArr.count*44)];
     view.backgroundColor = [UIColor whiteColor];
     UILabel * versionLbl = [[UILabel alloc]initWithFrame:CGRectMake(0, view.height - 25 - 14, kWidth, 14)];
     versionLbl.font = [UIFont systemFontOfSize:14];
@@ -69,6 +68,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     APAccountModel *model = self.tableViewArr[indexPath.row];
     cell.imageView.image = [UIImage imageNamed:model.menuImageStr];
     cell.textLabel.text = model.menuName;
@@ -87,10 +87,10 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if (cell.selectionStyle != UITableViewCellSelectionStyleNone) {
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    }
+//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    if (cell.selectionStyle != UITableViewCellSelectionStyleNone) {
+//        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    }
 
 }
 
