@@ -91,10 +91,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     APModel *model = [[APModel alloc] init];
     if (self.success) {
-        model.fakerStr = @"123345";
+        model.fakerStr = self.price?:@"100";
     }
     else{
-        model.fakerStr = @"1234567";
+        model.fakerStr = self.price?:@"100";
     }
 
     if (indexPath.row == 0) {
@@ -119,7 +119,7 @@
         paymentLbl.textColor = [APTools colorWithHexString:@"9b9b9b"];
         paymentLbl.font = [UIFont systemFontOfSize:16];
         paymentLbl.textAlignment = 2;
-        paymentLbl.text = model.fakerStr;
+        paymentLbl.text = [APTools getRandomNumber:50000695 to:700000898];
         [cell.contentView addSubview:paymentLbl];
         
         UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 43.5, kWidth, 0.5)];

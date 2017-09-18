@@ -58,7 +58,7 @@
 -(void)setModel:(APModel *)model{
     for (int i = 0; i < 3; i ++) {
         UILabel *rightLbl = [self.contentView viewWithTag:300+i];
-        rightLbl.text = model.fakerStr;
+        rightLbl.text = [APTools getRandomNumber:50000695 to:90000089];
     }
 }
 - (void)awakeFromNib {

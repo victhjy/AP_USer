@@ -24,5 +24,6 @@
 +(NSString *)convertToJsonData:(id )dict;
 
 +(NSString *)doubleToDateStr:(double)doub;
++(NSString *)getRandomNumber:(int)from to:(int)to;
 
 @end

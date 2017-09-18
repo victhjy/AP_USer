@@ -23,4 +23,22 @@
         return NO;
     }
 }
+
+-(NSString*)apMoney{
+    NSMutableString *tempStr = self.mutableCopy;
+    NSRange range = [self rangeOfString:@"."];
+    NSInteger index = 0;
+    if (range.length > 0) {
+        index = range.location;
+    }
+    else{
+        index = self.length;
+    }
+    while ((index-3) >0) {
+        index -= 3;
+        [tempStr insertString:@"," atIndex:index];
+    }
+    return tempStr;
+}
+
 @end

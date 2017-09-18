@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="VAG Rounded Bold.ttf">
-            <string>VAGRoundedBold</string>
+        <array key="Calibre-Regular.ttf">
+            <string>Calibre-Regular</string>
         </array>
-        <array key="VAG Rounded Light.ttf">
-            <string>VAGRounded-Light</string>
+        <array key="Calibre-Semibold.ttf">
+            <string>Calibre-Semibold</string>
         </array>
     </customFonts>
     <objects>
@@ -46,7 +46,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njc-BY-cNY">
-                    <fontDescription key="fontDescription" name="VAGRoundedBold" family="VAGRounded" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -67,7 +67,7 @@
                         <constraint firstAttribute="height" constant="20" id="BjW-lu-pOc"/>
                         <constraint firstAttribute="width" constant="40" id="GOw-tj-pxe"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="VAGRounded-Light" family="VAG Rounded" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -83,12 +83,12 @@
                         <constraint firstAttribute="height" constant="30" id="rsU-WQ-dMl"/>
                     </constraints>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" name="VAGRoundedBold" family="VAGRounded" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eg-sq-A4k">
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" name="VAGRoundedBold" family="VAGRounded" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="17"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81f-p7-iQC">
@@ -98,7 +98,7 @@
                     </constraints>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXi-kN-lGN">
-                    <fontDescription key="fontDescription" name="VAGRounded-Light" family="VAG Rounded" pointSize="14"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -107,6 +107,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="GUs-fU-QPF"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -115,17 +116,17 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Don't have any account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cS-ui-Ppa">
-                    <fontDescription key="fontDescription" name="VAGRoundedBold" family="VAGRounded" pointSize="13"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="13"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exe-ud-eGf">
-                    <fontDescription key="fontDescription" name="VAGRoundedBold" family="VAGRounded" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-8W-aCy">
-                    <fontDescription key="fontDescription" name="VAGRounded-Light" family="VAG Rounded" pointSize="14"/>
+                    <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>

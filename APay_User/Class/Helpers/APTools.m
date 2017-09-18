@@ -153,8 +153,12 @@
     }
     
     return [NSString stringWithFormat:@"%@:%@:%@",firstStr,secondStr,thridStr];
-    
-    
+}
+
++(NSString *)getRandomNumber:(int)from to:(int)to
+{
+    int x =  (int)(from + (arc4random() % (to - from + 1)));
+    return [NSString stringWithFormat:@"%d",x];
 }
 
 

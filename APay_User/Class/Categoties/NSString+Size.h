@@ -12,4 +12,5 @@
 
 -(BOOL)isExist;
 - (CGSize )sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize;
+-(NSString*)apMoney;
 @end

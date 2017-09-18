@@ -72,5 +72,7 @@
 "SUN" = "SUN";
 "Hi %@, your Top Up and Withdraw history will show up here" = "Hi %@, your Top Up and Withdraw history will show up here";
 "Hi %@, your transaction history will show up here, hope you could enjoy APay services everyday." = "Hi %@, your transaction history will show up here, hope you could enjoy APay services everyday.";
+"Hi %@, your latest transaction information will show up here, hope you could enjoy APay services everyday." = "Hi %@, your latest transaction information will show up here, hope you could enjoy APay services everyday.";
+"Payment Assistant" = "Payment Assistant";
 
 

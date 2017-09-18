@@ -68,7 +68,7 @@
     UIView *line2=[[UILabel alloc]initWithFrame:CGRectMake(kWidth/3*2, 0, 0.25, kWidth/3)];
     line1.backgroundColor=[UIColor lightGrayColor];
     
-    UIView *line3=[[UILabel alloc]initWithFrame:CGRectMake(0, kWidth/3, kWidth, 0.25)];
+    UIView *line3=[[UILabel alloc]initWithFrame:CGRectMake(0, kWidth/3- 0.25, kWidth, 0.25)];
     line1.backgroundColor=[UIColor lightGrayColor];
     line2.backgroundColor=[UIColor lightGrayColor];
     line3.backgroundColor=[UIColor lightGrayColor];

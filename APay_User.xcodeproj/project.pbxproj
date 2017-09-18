@@ -45,6 +45,8 @@
 		81A2B8D51F5ECF7F0026D6D2 /* APay_UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A2B8D41F5ECF7F0026D6D2 /* APay_UserTests.m */; };
 		81A2B8E01F5ECF7F0026D6D2 /* APay_UserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A2B8DF1F5ECF7F0026D6D2 /* APay_UserUITests.m */; };
 		81A2B8EE1F5ED1E60026D6D2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A2B8ED1F5ED1E60026D6D2 /* libsqlite3.tbd */; };
+		81A3422D1F70337000ADA791 /* APPayAssistantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A3422C1F70337000ADA791 /* APPayAssistantCell.m */; };
+		81A342311F70419100ADA791 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A342301F70419100ADA791 /* WRNavigationBar.m */; };
 		81A9419D1F6BF6C700A97618 /* Calibre-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81A9419A1F6BF6C700A97618 /* Calibre-Medium.ttf */; };
 		81A9419E1F6BF6C700A97618 /* Calibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81A9419B1F6BF6C700A97618 /* Calibre-Regular.ttf */; };
 		81A9419F1F6BF6C700A97618 /* Calibre-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81A9419C1F6BF6C700A97618 /* Calibre-Semibold.ttf */; };
@@ -163,6 +165,10 @@
 		81A2B8DF1F5ECF7F0026D6D2 /* APay_UserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APay_UserUITests.m; sourceTree = "<group>"; };
 		81A2B8E11F5ECF7F0026D6D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81A2B8ED1F5ED1E60026D6D2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		81A3422B1F70337000ADA791 /* APPayAssistantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPayAssistantCell.h; sourceTree = "<group>"; };
+		81A3422C1F70337000ADA791 /* APPayAssistantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPayAssistantCell.m; sourceTree = "<group>"; };
+		81A3422F1F70419100ADA791 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
+		81A342301F70419100ADA791 /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
 		81A9419A1F6BF6C700A97618 /* Calibre-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Medium.ttf"; sourceTree = "<group>"; };
 		81A9419B1F6BF6C700A97618 /* Calibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Regular.ttf"; sourceTree = "<group>"; };
 		81A9419C1F6BF6C700A97618 /* Calibre-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Calibre-Semibold.ttf"; sourceTree = "<group>"; };
@@ -449,6 +455,8 @@
 				81F51B061F6B621D004697C5 /* APMainPopView.m */,
 				81F51B081F6B65FC004697C5 /* APTopUpBtn.h */,
 				81F51B091F6B65FC004697C5 /* APTopUpBtn.m */,
+				81A3422B1F70337000ADA791 /* APPayAssistantCell.h */,
+				81A3422C1F70337000ADA791 /* APPayAssistantCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -739,10 +747,20 @@
 		81A2B8F81F5ED5620026D6D2 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				81A3422E1F70419100ADA791 /* WRNavigationBar */,
 				814EF4CD1F6961A8003CDE7F /* ZXingObjcQRCode */,
 				81F029CF1F65752B006C98E3 /* KMNavigationBarTransition */,
 			);
 			path = Vendors;
+			sourceTree = "<group>";
+		};
+		81A3422E1F70419100ADA791 /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				81A3422F1F70419100ADA791 /* WRNavigationBar.h */,
+				81A342301F70419100ADA791 /* WRNavigationBar.m */,
+			);
+			path = WRNavigationBar;
 			sourceTree = "<group>";
 		};
 		81A941991F6BF6C700A97618 /* Font */ = {
@@ -1091,9 +1109,11 @@
 				81F029CD1F6569C7006C98E3 /* APRegisterVC.m in Sources */,
 				812F6CFE1F683DFB0031CC8F /* APMainScrollCell.m in Sources */,
 				81A2B8BC1F5ECF7E0026D6D2 /* main.m in Sources */,
+				81A342311F70419100ADA791 /* WRNavigationBar.m in Sources */,
 				81279ADA1F6FEF570018268E /* APBalanceCell.m in Sources */,
 				81F029D81F65752B006C98E3 /* UIViewController+KMNavigationBarTransition.m in Sources */,
 				81F08A311F63C896009B4DA9 /* APWelcomeVC.m in Sources */,
+				81A3422D1F70337000ADA791 /* APPayAssistantCell.m in Sources */,
 				814EF4D61F6961A8003CDE7F /* NBZXingQRViewController.m in Sources */,
 				81F08A1E1F63BDC4009B4DA9 /* APPManager.m in Sources */,
 				81A1352A1F6AC3BC00B89C3B /* APSetCompletedPaymentPwdVC.m in Sources */,

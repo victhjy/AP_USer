@@ -16,6 +16,7 @@
 #import "APLoginViewController.h"
 #import "APBalanceMainVC.h"
 #import "APTransactions.h"
+#import "APPayAssistantCell.h"
 
 @interface APMainViewVC ()<UITableViewDelegate,UITableViewDataSource,NBZXingQRViewControllerDelegate>
 @property(nonatomic, strong) UITableView *tableView;
@@ -69,7 +70,7 @@
 #pragma mark - TableView delegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -105,7 +106,7 @@
         };
         return cell;
     }
-    else{
+    else if(indexPath.section == 1){
         static NSString *section1Iden=@"cellSection1";
         APMainScrollCell *cell = [tableView dequeueReusableCellWithIdentifier:section1Iden];
         if (!cell) {
@@ -117,6 +118,15 @@
             [weakSelf scrollImageClicked:clickedIndex];
         };
         return cell;
+    }
+    else if (indexPath.section == 2){
+        APPayAssistantCell *cell = [APPayAssistantCell cellFromTable:tableView];
+        APModel *model = [[APModel alloc]init];
+        [cell setModel:model];
+        return cell;
+    }
+    else{
+        return nil;
     }
 }
 
@@ -169,6 +179,13 @@
         _tableView.tableFooterView=[UIView new];
         _tableView.delegate=self;
         _tableView.dataSource=self;
+        CGFloat footerH = kHeight - 64 - (kWidth*0.367*2 + kHeight/3);
+        
+        UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kWidth, footerH)];
+        imageV.image =[UIImage imageNamed:@"lowBg"];
+//        _tableView.tableFooterView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"lowBg"]];
+        _tableView.tableFooterView = imageV;
+
     }
     return _tableView;
 }

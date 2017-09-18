@@ -57,18 +57,18 @@
     [self.resultBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 
     CGSize btnTitleSize;
-    if (model.fakerStr.length %2 == 0) {
+//    if (model.fakerStr.length %2 == 0) {
         self.amountLbl.text = [NSString stringWithFormat:@"-Rp.%@",model.fakerStr];
         [self.resultBtn setTitle:L(@"Success") forState:UIControlStateNormal];
         btnTitleSize = [L(@"Success") sizeWithFont:self.resultBtn.titleLabel.font maxSize:CGSizeMake(kWidth, 30)];
         self.resultBtn.backgroundColor = [APTools colorWithHexString:@"46bd35"];
-    }
-    else{
-        self.amountLbl.text = [NSString stringWithFormat:@"Rp.%@",model.fakerStr];
-        [self.resultBtn setTitle:L(@"Failed") forState:UIControlStateNormal];
-        btnTitleSize = [L(@"Failed") sizeWithFont:self.resultBtn.titleLabel.font maxSize:CGSizeMake(kWidth, 30)];
-        self.resultBtn.backgroundColor = [APTools colorWithHexString:@"f23e54"];
-    }
+//    }
+//    else{
+//        self.amountLbl.text = [NSString stringWithFormat:@"Rp.%@",model.fakerStr];
+//        [self.resultBtn setTitle:L(@"Failed") forState:UIControlStateNormal];
+//        btnTitleSize = [L(@"Failed") sizeWithFont:self.resultBtn.titleLabel.font maxSize:CGSizeMake(kWidth, 30)];
+//        self.resultBtn.backgroundColor = [APTools colorWithHexString:@"f23e54"];
+//    }
     
     CGSize titleSize = [model.fakerStr sizeWithFont:self.titleLbl.font maxSize:CGSizeMake(kWidth, 20)];
     CGSize amountSize = [model.fakerStr sizeWithFont:self.amountLbl.font maxSize:CGSizeMake(kWidth, 30)];

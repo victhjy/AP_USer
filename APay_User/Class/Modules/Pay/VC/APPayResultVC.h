@@ -9,6 +9,6 @@
 #import "APUIViewController.h"
 
 @interface APPayResultVC : APUIViewController
-
+@property(nonatomic, copy) NSString *price;
 @property(nonatomic, assign) BOOL success;
 @end

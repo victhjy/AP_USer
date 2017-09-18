@@ -29,9 +29,9 @@
 - (void)setDataArr:(NSMutableArray *)dataArr {
     _dataArr=dataArr;
     NSMutableArray *mutableImageArr=[NSMutableArray new];
+    NSArray *arr=@[@"banner1",@"banner2",@"banner3"];
     for (int i = 0 ; i < dataArr.count ; i ++ ) {
-
-        [mutableImageArr addObject:[UIColor randomColorImage]];
+        [mutableImageArr addObject:[UIImage imageNamed:arr[i]]];
     }
     
     BHInfiniteScrollView* infinitePageView1 = [BHInfiniteScrollView

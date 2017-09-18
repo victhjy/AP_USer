@@ -34,7 +34,7 @@
 
 - (void)createUI {
     CGFloat topLadding = 10;
-    UILabel *weekLbl = [[UILabel alloc]initWithFrame:CGRectMake(13, topLadding, 40, 13)];
+    UILabel *weekLbl = [[UILabel alloc]initWithFrame:CGRectMake(13, topLadding+3, 40, 13)];
     weekLbl.font = [UIFont boldSystemFontOfSize:14];
     weekLbl.tag = weekTag;
     [self.contentView addSubview:weekLbl];
@@ -45,7 +45,7 @@
     dateLbl.tag = dateTag;
     [self.contentView addSubview:dateLbl];
     
-    UIImageView *typeIV = [[UIImageView alloc]initWithFrame:CGRectMake(70, 10, 25, 30)];
+    UIImageView *typeIV = [[UIImageView alloc]initWithFrame:CGRectMake(75+13, 8, 25, 30)];
     typeIV.tag = typeImageTag;
     [self.contentView addSubview:typeIV];
     
@@ -60,7 +60,7 @@
     typeLbl.tag = typeTag;
     [self.contentView addSubview:typeLbl];
     
-    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 49.5, kWidth, 0.5)];
+    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 49.5, kWidth*2, 0.5)];
     line.backgroundColor = [APTools colorWithHexString:@"9b9b9b"];
     [self.contentView addSubview:line];
 
@@ -82,6 +82,7 @@
     priceLbl.text = [NSString stringWithFormat:@"Rp.%@",model.fakerStr];
     typeLbl.text = L(@"Top Up");
 }
+
 
 - (void)awakeFromNib {
     [super awakeFromNib];

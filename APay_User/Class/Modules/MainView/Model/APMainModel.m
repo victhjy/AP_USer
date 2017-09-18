@@ -22,7 +22,7 @@
         itemModel.titleStr = title1[i];
         
         if (i == 0) {
-            itemModel.subTitleStr=@"000";
+            itemModel.subTitleStr=@"5000";
         }
         [muarr1 addObject:itemModel];
     }

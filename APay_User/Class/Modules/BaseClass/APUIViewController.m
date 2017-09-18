@@ -7,7 +7,7 @@
 //
 
 #import "APUIViewController.h"
-
+#import "WRNavigationBar.h"
 @interface APUIViewController ()
 
 @end
@@ -21,6 +21,8 @@
        NSForegroundColorAttributeName:[UIColor whiteColor]}
      ];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleDone target:nil action:nil];
+    
+    [self wr_setStatusBarStyle:UIStatusBarStyleLightContent];
     // Do any additional setup after loading the view.
 }
 

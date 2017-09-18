@@ -71,8 +71,8 @@
 "SUN" = "MIN";
 "Hi %@, your Top Up and Withdraw history will show up here" = "Hi %@, Riwayat Isi Saldo dan Tarik Saldo kamu akan ditampilkan disini";
 "Hi %@, your transaction history will show up here, hope you could enjoy APay services everyday." = "Hi %@, riwayat transaksi kamu akan ditampilkan disini, selamat menggunakan servis transaksi dari APay";
-
-
+"Hi %@, your latest transaction information will show up here, hope you could enjoy APay services everyday." = "Hi %@, informasi transaksi terakhir anda akan muncul disini, semoga anda menikmati layanan APay setiap harinya.";
+"Payment Assistant" = "Asisten Pembayaran";
 
 
 

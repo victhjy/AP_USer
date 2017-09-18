@@ -35,7 +35,7 @@
     tipLbl.font = [UIFont systemFontOfSize:13];
     tipLbl.text = tipText;
     tipLbl.numberOfLines = 0;
-    tipLbl.lineBreakMode = NSLineBreakByWordWrapping;
+    tipLbl.lineBreakMode = NSLineBreakByCharWrapping;
     tipLbl.textColor = [UIColor grayColor];
     [self.view addSubview:tipLbl];
     

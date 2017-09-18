@@ -64,6 +64,8 @@
     priceTf.tag = priceTfTag;
     priceTf.borderStyle = UITextBorderStyleNone;
     priceTf.delegate = self;
+    [priceTf becomeFirstResponder];
+    [priceTf addTarget:self action:@selector(TFChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.topBgView addSubview:priceTf];
     
     
@@ -144,8 +146,10 @@
         
         view.rightBlock = ^{
             [weakView removeFromSuperview];
+            UITextField *tf = [self.view viewWithTag:priceTfTag];
             APPayResultVC *resultVC = [[APPayResultVC alloc]init];
-            resultVC.success = NO;
+            resultVC.price = tf.text;
+            resultVC.success = YES;
             [self.navigationController pushViewController:resultVC animated:YES];
         };
         [[UIApplication sharedApplication].keyWindow addSubview:view];
@@ -186,6 +190,11 @@
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     
+}
+
+- (void)TFChanged:(UITextField *)textField {
+   textField.text = [textField.text stringByReplacingOccurrencesOfString:@"," withString:@""];
+    textField.text = textField.text.apMoney;
 }
 
 - (void)didReceiveMemoryWarning {

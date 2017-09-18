@@ -50,7 +50,7 @@
     [self.hidePasswordBtn addTarget:self action:@selector(hidePasswordBtnClicked) forControlEvents:UIControlEventTouchUpInside];
     self.passwordTf.secureTextEntry = YES;
     
-    self.phoneNumTf.keyboardType=UIKeyboardTypeNamePhonePad;
+//    self.phoneNumTf.keyboardType=UIKeyboardTypeNamePhonePad;
     
     if (isIndonesia) {
         self.phoneNumTf.placeholder = @"Nomor Telepon";
