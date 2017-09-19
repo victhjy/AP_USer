@@ -92,6 +92,25 @@
 "Your %@ Salary has arrived!" = "Your %@ Salary has arrived!";
 "Welcome to APay, enjoy!!" = "Welcome to APay, enjoy!!";
 
+"Hi %@, the notification information will show up here. Enjoy APay services everyday!" = "Hi %@, the notification information will show up here. Enjoy APay services everyday!";
+"Details" = "Details";
+"Top Up %@ succeed! Thank you for using our services." = "Top Up %@ succeed! Thank you for using our services.";
+"Payment %@ succeed! Thank you for using our services." = "Payment %@ succeed! Thank you for using our services.";
+"Withdraw %@ succeed! Thank you for using our services." = "Withdraw %@ succeed! Thank you for using our services.";
+"Your ID Card is verified! Now you can withdraw your balance." = "Your ID Card is verified! Now you can withdraw your balance.";
+"Your %@ salary is here" = "Your %@ salary is here";
+
+"See Details" = "See Details";
+"My Balance" = "My Balance";
+
+
+
+
+
+
+
+
+
 
 
 

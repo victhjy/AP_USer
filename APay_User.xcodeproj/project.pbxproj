@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		810B56751F6A7F91008A60A1 /* APEnterPaymentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B56741F6A7F91008A60A1 /* APEnterPaymentView.m */; };
+		811E802E1F70A7BF00007569 /* APNotificationDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E802D1F70A7BF00007569 /* APNotificationDetailVC.m */; };
 		81279AD71F6FDEA50018268E /* APBalanceMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81279AD61F6FDEA50018268E /* APBalanceMainVC.m */; };
 		81279ADA1F6FEF570018268E /* APBalanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81279AD91F6FEF570018268E /* APBalanceCell.m */; };
 		81279AE11F70104A0018268E /* APTransactions.m in Sources */ = {isa = PBXBuildFile; fileRef = 81279AE01F70104A0018268E /* APTransactions.m */; };
@@ -32,6 +33,8 @@
 		814EF4E81F69639F003CDE7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814EF4E71F69639F003CDE7F /* CoreGraphics.framework */; };
 		814EF4EF1F6971EF003CDE7F /* APSetAmountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 814EF4EE1F6971EF003CDE7F /* APSetAmountVC.m */; };
 		814EF4F21F69790B003CDE7F /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 814EF4F11F69790B003CDE7F /* UITextView+Placeholder.m */; };
+		8172CC701F6FC3FE00FD70D2 /* APNotificationListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172CC6F1F6FC3FE00FD70D2 /* APNotificationListVC.m */; };
+		8172CC731F6FC4D700FD70D2 /* APNotificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172CC721F6FC4D700FD70D2 /* APNotificationModel.m */; };
 		819ED51D1F63D15000934C8B /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 819ED51C1F63D15000934C8B /* UIView+Frame.m */; };
 		819ED52A1F63D55B00934C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819ED5281F63D55B00934C8B /* Main.storyboard */; };
 		819ED5351F64199D00934C8B /* APLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819ED5331F64199D00934C8B /* APLoginViewController.m */; };
@@ -71,6 +74,7 @@
 		81F08A271F63BF12009B4DA9 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F08A261F63BF12009B4DA9 /* MBProgressHUD+MJ.m */; };
 		81F08A311F63C896009B4DA9 /* APWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F08A2F1F63C896009B4DA9 /* APWelcomeVC.m */; };
 		81F08A341F63C8AE009B4DA9 /* APWelcomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F08A331F63C8AE009B4DA9 /* APWelcomeModel.m */; };
+		81F3FFD11F6FF2DE009A9383 /* UITableView+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F3FFD01F6FF2DE009A9383 /* UITableView+Add.m */; };
 		81F51B071F6B621D004697C5 /* APMainPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F51B061F6B621D004697C5 /* APMainPopView.m */; };
 		81F51B0A1F6B65FC004697C5 /* APTopUpBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F51B091F6B65FC004697C5 /* APTopUpBtn.m */; };
 		81F51B0E1F6BA737004697C5 /* APUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F51B0D1F6BA737004697C5 /* APUIViewController.m */; };
@@ -106,6 +110,8 @@
 		5811F7E024261CC88791A310 /* Pods-APay_User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APay_User.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APay_User/Pods-APay_User.debug.xcconfig"; sourceTree = "<group>"; };
 		810B56731F6A7F91008A60A1 /* APEnterPaymentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APEnterPaymentView.h; sourceTree = "<group>"; };
 		810B56741F6A7F91008A60A1 /* APEnterPaymentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APEnterPaymentView.m; sourceTree = "<group>"; };
+		811E802C1F70A7BF00007569 /* APNotificationDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNotificationDetailVC.h; sourceTree = "<group>"; };
+		811E802D1F70A7BF00007569 /* APNotificationDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNotificationDetailVC.m; sourceTree = "<group>"; };
 		81279AD51F6FDEA50018268E /* APBalanceMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBalanceMainVC.h; sourceTree = "<group>"; };
 		81279AD61F6FDEA50018268E /* APBalanceMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APBalanceMainVC.m; sourceTree = "<group>"; };
 		81279AD81F6FEF570018268E /* APBalanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APBalanceCell.h; sourceTree = "<group>"; };
@@ -142,6 +148,10 @@
 		814EF4EE1F6971EF003CDE7F /* APSetAmountVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSetAmountVC.m; sourceTree = "<group>"; };
 		814EF4F01F69790B003CDE7F /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		814EF4F11F69790B003CDE7F /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		8172CC6E1F6FC3FE00FD70D2 /* APNotificationListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNotificationListVC.h; sourceTree = "<group>"; };
+		8172CC6F1F6FC3FE00FD70D2 /* APNotificationListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNotificationListVC.m; sourceTree = "<group>"; };
+		8172CC711F6FC4D700FD70D2 /* APNotificationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNotificationModel.h; sourceTree = "<group>"; };
+		8172CC721F6FC4D700FD70D2 /* APNotificationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNotificationModel.m; sourceTree = "<group>"; };
 		819ED51B1F63D15000934C8B /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		819ED51C1F63D15000934C8B /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		819ED5291F63D55B00934C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -220,6 +230,8 @@
 		81F08A2F1F63C896009B4DA9 /* APWelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWelcomeVC.m; sourceTree = "<group>"; };
 		81F08A321F63C8AE009B4DA9 /* APWelcomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APWelcomeModel.h; sourceTree = "<group>"; };
 		81F08A331F63C8AE009B4DA9 /* APWelcomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APWelcomeModel.m; sourceTree = "<group>"; };
+		81F3FFCF1F6FF2DE009A9383 /* UITableView+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Add.h"; sourceTree = "<group>"; };
+		81F3FFD01F6FF2DE009A9383 /* UITableView+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Add.m"; sourceTree = "<group>"; };
 		81F51B051F6B621D004697C5 /* APMainPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMainPopView.h; sourceTree = "<group>"; };
 		81F51B061F6B621D004697C5 /* APMainPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMainPopView.m; sourceTree = "<group>"; };
 		81F51B081F6B65FC004697C5 /* APTopUpBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APTopUpBtn.h; sourceTree = "<group>"; };
@@ -308,6 +320,8 @@
 		81279AC61F6FDB940018268E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8172CC711F6FC4D700FD70D2 /* APNotificationModel.h */,
+				8172CC721F6FC4D700FD70D2 /* APNotificationModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +331,10 @@
 			children = (
 				81F9BB0B1F70BBAA00377733 /* APSettingVC.h */,
 				81F9BB0C1F70BBAA00377733 /* APSettingVC.m */,
+				8172CC6E1F6FC3FE00FD70D2 /* APNotificationListVC.h */,
+				8172CC6F1F6FC3FE00FD70D2 /* APNotificationListVC.m */,
+				811E802C1F70A7BF00007569 /* APNotificationDetailVC.h */,
+				811E802D1F70A7BF00007569 /* APNotificationDetailVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -689,6 +707,8 @@
 		81A2B8F21F5ED5620026D6D2 /* Categoties */ = {
 			isa = PBXGroup;
 			children = (
+				81F3FFCF1F6FF2DE009A9383 /* UITableView+Add.h */,
+				81F3FFD01F6FF2DE009A9383 /* UITableView+Add.m */,
 				819ED51B1F63D15000934C8B /* UIView+Frame.h */,
 				819ED51C1F63D15000934C8B /* UIView+Frame.m */,
 				81F08A251F63BF12009B4DA9 /* MBProgressHUD+MJ.h */,
@@ -1090,6 +1110,7 @@
 				81F74FF51F6CBFC800A75668 /* APPayNoteCell.m in Sources */,
 				819ED51D1F63D15000934C8B /* UIView+Frame.m in Sources */,
 				81A941A21F6BF8AC00A97618 /* UIFont+APFont.m in Sources */,
+				8172CC731F6FC4D700FD70D2 /* APNotificationModel.m in Sources */,
 				81F08A341F63C8AE009B4DA9 /* APWelcomeModel.m in Sources */,
 				81F029D71F65752B006C98E3 /* UINavigationController+KMNavigationBarTransition.m in Sources */,
 				81A941A81F6C235400A97618 /* APPayResultHeaderCell.m in Sources */,
@@ -1106,6 +1127,7 @@
 				81F74FF21F6CB94900A75668 /* APPayResultDetailCell.m in Sources */,
 				81279AE11F70104A0018268E /* APTransactions.m in Sources */,
 				81F51B0E1F6BA737004697C5 /* APUIViewController.m in Sources */,
+				81F3FFD11F6FF2DE009A9383 /* UITableView+Add.m in Sources */,
 				81A941AB1F6C26D700A97618 /* APModel.m in Sources */,
 				81F51B141F6BC009004697C5 /* APPayWrongPwdView.m in Sources */,
 				81F9BB0D1F70BBAA00377733 /* APSettingVC.m in Sources */,
@@ -1132,6 +1154,8 @@
 				81F029D81F65752B006C98E3 /* UIViewController+KMNavigationBarTransition.m in Sources */,
 				81F08A311F63C896009B4DA9 /* APWelcomeVC.m in Sources */,
 				81A3422D1F70337000ADA791 /* APPayAssistantCell.m in Sources */,
+				8172CC701F6FC3FE00FD70D2 /* APNotificationListVC.m in Sources */,
+				811E802E1F70A7BF00007569 /* APNotificationDetailVC.m in Sources */,
 				814EF4D61F6961A8003CDE7F /* NBZXingQRViewController.m in Sources */,
 				81F08A1E1F63BDC4009B4DA9 /* APPManager.m in Sources */,
 				81A1352A1F6AC3BC00B89C3B /* APSetCompletedPaymentPwdVC.m in Sources */,

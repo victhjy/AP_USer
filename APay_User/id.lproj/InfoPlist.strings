@@ -91,6 +91,22 @@
 "Your %@ Salary has arrived!" = "Gaji kamu bulan %@ sudah tiba!";
 "Welcome to APay, enjoy!!" = "Selamat Datang di APay!! Selamat menikmati!!";
 
+"Hi %@, the notification information will show up here. Enjoy APay services everyday!" = "Hi %@, informasi notifikasi anda akan muncul disini. Nikmati kemudahan dengan APay!";
+"Details" = "Rincian";
+
+"Top Up %@ succeed! Thank you for using our services." = "Isi Saldo %@ berhasil! Terima kasih telah menggunakan pelayanan kami.";
+"Payment %@ succeed! Thank you for using our services." = "Pembayaran %@ berhasil! Terima kasih telah menggunakan pelayanan kami.";
+"Withdraw %@ succeed! Thank you for using our services." = "Tarik saldo %@ berhasil! Terima kasih telah menggunakan pelayanan kami.";
+"Your ID Card is verified! Now you can withdraw your balance." = "Kartu identitas anda telah kami verifikasi! Sekarang anda bisa menarik saldo anda.";
+"Your %@ salary is here" = "Gaji bulan %@ telah tiba";
+
+"See Details" = "Lihat Rincian";
+"My Balance" = "Saldo saya";
+
+
+
+
+
 
 
 

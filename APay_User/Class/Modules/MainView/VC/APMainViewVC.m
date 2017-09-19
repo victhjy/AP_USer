@@ -19,11 +19,14 @@
 #import "APPayAssistantCell.h"
 #import "APMyAccountVC.h"
 #import "APSettingVC.h"
-
+#import "APNotificationListVC.h"
 @interface APMainViewVC ()<UITableViewDelegate,UITableViewDataSource,NBZXingQRViewControllerDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSMutableArray *tableViewArr;
 @property(nonatomic, strong) APMainModel *mainModel;
+@property(nonatomic, strong) UIBarButtonItem *rightBar;
+@property(nonatomic, strong) UIImageView *notiView;
+@property(nonatomic, strong) UIView *circleView;
 
 @end
 
@@ -39,21 +42,50 @@
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
     
-    UIView *titleView = [[UIView alloc]initWithFrame:CGRectMake(0, 11, 60, 22)];
-    UIImageView *titleV =[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"apaytitle"]];
-    titleV.frame = CGRectMake(0, 0, 60, 22);
-    [titleView addSubview:titleV];
-//    titleView.backgroundColor = [UIColor redColor];
-    self.navigationItem.titleView = titleView;
-    [self.view addSubview:self.tableView];
+    
     self.automaticallyAdjustsScrollViewInsets=NO;
     self.navigationItem.hidesBackButton=YES;
     
+    [self createNavigationBar];
     
     if (self.firstShow) {
         [self showPop];
     }
     // Do any additional setup after loading the view.
+}
+
+- (void)createNavigationBar {
+    UIView *titleView = [[UIView alloc]initWithFrame:CGRectMake(0, 11, 60, 22)];
+    UIImageView *titleV =[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"apaytitle"]];
+    titleV.frame = CGRectMake(0, 0, 60, 22);
+    [titleView addSubview:titleV];
+    //    titleView.backgroundColor = [UIColor redColor];
+    self.navigationItem.titleView = titleView;
+    [self.view addSubview:self.tableView];
+    
+    self.notiView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"ic_notification"]];
+    self.notiView.frame = CGRectMake(0, 0, 23, 25);
+    self.rightBar = [[UIBarButtonItem alloc]initWithCustomView:self.notiView];
+    
+    self.circleView = [[UIView alloc]init];
+    self.circleView.backgroundColor = [APTools colorWithHexString:@"f9ba48"];
+    self.circleView.layer.masksToBounds = YES;
+    self.circleView.layer.cornerRadius = 4;
+    
+    [self.notiView addSubview:self.circleView];
+    [self.circleView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(self.notiView);
+        make.top.mas_equalTo(self.notiView).offset(2);
+        make.size.mas_equalTo(CGSizeMake(8, 8));
+    }];
+    
+    self.notiView.userInteractionEnabled = YES;
+    __weak __typeof(self)weakSelf = self;
+    [self.notiView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
+        [weakSelf pushToNotification];
+    }];
+//    self.rightBar = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"ic_notification"] style:UIBarButtonItemStyleDone target:self action:@selector(pushToNotification)];
+    self.navigationItem.rightBarButtonItem = self.rightBar;
 }
 
 - (void)showPop {
@@ -174,6 +206,10 @@
     }
 }
 
+- (void)pushToNotification {
+    APNotificationListVC *listVC = [[APNotificationListVC alloc]init];
+    [self.navigationController pushViewController:listVC animated:YES];
+}
 
 #pragma mark - Getter
 
