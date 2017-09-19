@@ -78,6 +78,9 @@
 		81F51B141F6BC009004697C5 /* APPayWrongPwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F51B131F6BC009004697C5 /* APPayWrongPwdView.m */; };
 		81F74FF21F6CB94900A75668 /* APPayResultDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F74FF11F6CB94900A75668 /* APPayResultDetailCell.m */; };
 		81F74FF51F6CBFC800A75668 /* APPayNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F74FF41F6CBFC800A75668 /* APPayNoteCell.m */; };
+		81F9BB0D1F70BBAA00377733 /* APSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F9BB0C1F70BBAA00377733 /* APSettingVC.m */; };
+		81F9BB101F70BC2D00377733 /* APMyAccountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F9BB0F1F70BC2D00377733 /* APMyAccountVC.m */; };
+		81F9BB131F70BCCD00377733 /* APAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F9BB121F70BCCD00377733 /* APAccountModel.m */; };
 		B94B48728586D67AC45CBFF8 /* Pods_APay_User.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453E4523142606DB9D4E8EFE /* Pods_APay_User.framework */; };
 /* End PBXBuildFile section */
 
@@ -231,6 +234,12 @@
 		81F74FF11F6CB94900A75668 /* APPayResultDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPayResultDetailCell.m; sourceTree = "<group>"; };
 		81F74FF31F6CBFC800A75668 /* APPayNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPayNoteCell.h; sourceTree = "<group>"; };
 		81F74FF41F6CBFC800A75668 /* APPayNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPayNoteCell.m; sourceTree = "<group>"; };
+		81F9BB0B1F70BBAA00377733 /* APSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSettingVC.h; sourceTree = "<group>"; };
+		81F9BB0C1F70BBAA00377733 /* APSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSettingVC.m; sourceTree = "<group>"; };
+		81F9BB0E1F70BC2D00377733 /* APMyAccountVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APMyAccountVC.h; sourceTree = "<group>"; };
+		81F9BB0F1F70BC2D00377733 /* APMyAccountVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APMyAccountVC.m; sourceTree = "<group>"; };
+		81F9BB111F70BCCD00377733 /* APAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAccountModel.h; sourceTree = "<group>"; };
+		81F9BB121F70BCCD00377733 /* APAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APAccountModel.m; sourceTree = "<group>"; };
 		9E317663FAA998E9C6CE3218 /* Pods-APay_User.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APay_User.release.xcconfig"; path = "Pods/Target Support Files/Pods-APay_User/Pods-APay_User.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -306,6 +315,8 @@
 		81279AC71F6FDB940018268E /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				81F9BB0B1F70BBAA00377733 /* APSettingVC.h */,
+				81F9BB0C1F70BBAA00377733 /* APSettingVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -365,6 +376,8 @@
 		81279AD21F6FDD8D0018268E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81F9BB111F70BCCD00377733 /* APAccountModel.h */,
+				81F9BB121F70BCCD00377733 /* APAccountModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,6 +385,8 @@
 		81279AD31F6FDD8D0018268E /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				81F9BB0E1F70BC2D00377733 /* APMyAccountVC.h */,
+				81F9BB0F1F70BC2D00377733 /* APMyAccountVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -1078,6 +1093,7 @@
 				81F08A341F63C8AE009B4DA9 /* APWelcomeModel.m in Sources */,
 				81F029D71F65752B006C98E3 /* UINavigationController+KMNavigationBarTransition.m in Sources */,
 				81A941A81F6C235400A97618 /* APPayResultHeaderCell.m in Sources */,
+				81F9BB101F70BC2D00377733 /* APMyAccountVC.m in Sources */,
 				81F08A271F63BF12009B4DA9 /* MBProgressHUD+MJ.m in Sources */,
 				81F08A181F63BABE009B4DA9 /* UIColor+Utility.m in Sources */,
 				81F029D61F65752B006C98E3 /* KMSwizzle.m in Sources */,
@@ -1092,6 +1108,7 @@
 				81F51B0E1F6BA737004697C5 /* APUIViewController.m in Sources */,
 				81A941AB1F6C26D700A97618 /* APModel.m in Sources */,
 				81F51B141F6BC009004697C5 /* APPayWrongPwdView.m in Sources */,
+				81F9BB0D1F70BBAA00377733 /* APSettingVC.m in Sources */,
 				81F08A051F63B587009B4DA9 /* APTools.m in Sources */,
 				814EF4EF1F6971EF003CDE7F /* APSetAmountVC.m in Sources */,
 				813D0B9D1F66BA7100022A10 /* APRegisterInfoVC.m in Sources */,
@@ -1101,6 +1118,7 @@
 				81F08A1B1F63BBFF009B4DA9 /* APNetManager.m in Sources */,
 				81F08A081F63B592009B4DA9 /* APHeaders.m in Sources */,
 				81F51B0A1F6B65FC004697C5 /* APTopUpBtn.m in Sources */,
+				81F9BB131F70BCCD00377733 /* APAccountModel.m in Sources */,
 				810B56751F6A7F91008A60A1 /* APEnterPaymentView.m in Sources */,
 				81F51B071F6B621D004697C5 /* APMainPopView.m in Sources */,
 				81F51B111F6BA756004697C5 /* APNavigationController.m in Sources */,

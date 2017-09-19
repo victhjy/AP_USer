@@ -17,7 +17,7 @@
 #import "APBalanceMainVC.h"
 #import "APTransactions.h"
 #import "APPayAssistantCell.h"
-
+#import "APMyAccountVC.h"
 @interface APMainViewVC ()<UITableViewDelegate,UITableViewDataSource,NBZXingQRViewControllerDelegate>
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSMutableArray *tableViewArr;
@@ -150,6 +150,10 @@
     else if (index == 3){
         APTransactions *transactionsVC = [[APTransactions alloc] init];
         [self.navigationController pushViewController:transactionsVC animated:YES];
+    }
+    else if (index == 4){
+        APMyAccountVC *accountVC = [[APMyAccountVC alloc]init];
+        [self.navigationController pushViewController:accountVC animated:YES];
     }
 }
 

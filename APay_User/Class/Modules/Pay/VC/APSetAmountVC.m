@@ -21,6 +21,7 @@
 @property(nonatomic, strong) UITextView *noteView;
 @property(nonatomic, strong) FBKVOController *KVOController;
 @property(nonatomic, strong) UIView *topBgView;
+@property(nonatomic, assign) BOOL firstOpen;
 @end
 
 @implementation APSetAmountVC
@@ -29,6 +30,7 @@
     [super viewDidLoad];
     self.title=L(@"Set Amount");
     
+    self.firstOpen = YES;
     self.view.backgroundColor=[APTools colorWithHexString:@"e1e1e1"];
     [self createUI];
     __weak __typeof(self)weakSelf = self;
@@ -36,6 +38,21 @@
         [weakSelf.view endEditing:YES];
     }];
     // Do any additional setup after loading the view.
+}
+
+- (void)loadView {
+    [super loadView];
+    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.view = scrollView;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    UITextField *priceTf = [self.view viewWithTag:priceTfTag];
+    if (self.firstOpen) {
+        [priceTf becomeFirstResponder];
+        self.firstOpen = NO;
+    }
 }
 
 - (void)createUI {
@@ -64,7 +81,6 @@
     priceTf.tag = priceTfTag;
     priceTf.borderStyle = UITextBorderStyleNone;
     priceTf.delegate = self;
-    [priceTf becomeFirstResponder];
     [priceTf addTarget:self action:@selector(TFChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.topBgView addSubview:priceTf];
     
@@ -107,7 +123,7 @@
     textCountLbl.tag = textCountTag;
     [self.topBgView addSubview:textCountLbl];
 
-    self.topBgView.frame = CGRectMake(5, 64+5, kWidth - 10, CGRectGetMaxY(textCountLbl.frame)+5);
+    self.topBgView.frame = CGRectMake(5, 5, kWidth - 10, CGRectGetMaxY(textCountLbl.frame)+5);
     self.topBgView.layer.masksToBounds=YES;
     self.topBgView.layer.cornerRadius = 2;
     
@@ -175,7 +191,7 @@
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
     if (textView.tag == noteTag) {
         NSString *willBecomeStr = [textView.text stringByReplacingCharactersInRange:range withString:text];
-        if (willBecomeStr.length > 25) {
+        if (willBecomeStr.length > 250) {
             return NO;
         }
         else{

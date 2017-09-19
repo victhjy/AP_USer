@@ -74,7 +74,11 @@
 "Hi %@, your transaction history will show up here, hope you could enjoy APay services everyday." = "Hi %@, your transaction history will show up here, hope you could enjoy APay services everyday.";
 "Hi %@, your latest transaction information will show up here, hope you could enjoy APay services everyday." = "Hi %@, your latest transaction information will show up here, hope you could enjoy APay services everyday.";
 "Payment Assistant" = "Payment Assistant";
-
+"Your account is verified!" = "Your account is verified!";
+"Change Password" = "Change Password";
+"Change Payment Password" = "Change Payment Password";
+"Logout" = "Logout";
+"Complete Your ID" = "Complete Your ID";
 
 
 

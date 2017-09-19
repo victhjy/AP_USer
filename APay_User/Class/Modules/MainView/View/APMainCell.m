@@ -68,10 +68,13 @@
     UIView *line2=[[UILabel alloc]initWithFrame:CGRectMake(kWidth/3*2, 0, 0.25, kWidth/3)];
     line1.backgroundColor=[UIColor lightGrayColor];
     
-    UIView *line3=[[UILabel alloc]initWithFrame:CGRectMake(0, kWidth/3- 0.25, kWidth, 0.25)];
+    UIView *line3=[[UILabel alloc]initWithFrame:CGRectMake(0, kWidth/3- 1, kWidth, 1)];
     line1.backgroundColor=[UIColor lightGrayColor];
     line2.backgroundColor=[UIColor lightGrayColor];
     line3.backgroundColor=[UIColor lightGrayColor];
+    line1.alpha = 0.3;
+    line2.alpha = line1.alpha;
+    line3.alpha = line1.alpha;
     [self.contentView addSubview:line1];
     [self.contentView addSubview:line2];
     [self.contentView addSubview:line3];

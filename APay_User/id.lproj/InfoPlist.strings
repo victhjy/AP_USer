@@ -73,7 +73,11 @@
 "Hi %@, your transaction history will show up here, hope you could enjoy APay services everyday." = "Hi %@, riwayat transaksi kamu akan ditampilkan disini, selamat menggunakan servis transaksi dari APay";
 "Hi %@, your latest transaction information will show up here, hope you could enjoy APay services everyday." = "Hi %@, informasi transaksi terakhir anda akan muncul disini, semoga anda menikmati layanan APay setiap harinya.";
 "Payment Assistant" = "Asisten Pembayaran";
-
+"Your account is verified!" = "Akun anda telah diverifikasi!";
+"Change Password" = "Ubah Kata Sandi";
+"Change Payment Password" = "Ubah Kode Sandi Pembayaran";
+"Logout" = "Keluar";
+"Complete Your ID" = "Lengkapi Data Anda";
 
 
 
