@@ -81,6 +81,7 @@
     [self.registerLbl addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
         APLog(@"register");
         APRegisterVC *vc=[[APRegisterVC alloc]init];
+        vc.curType = 0;
         [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     self.bgView.userInteractionEnabled=YES;

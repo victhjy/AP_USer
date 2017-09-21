@@ -7,7 +7,6 @@
 //
 
 #import "APRegisterVC.h"
-#import "APVerificationCodeVC.h"
 @interface APRegisterVC ()
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumberLbl;
 @property (weak, nonatomic) IBOutlet UILabel *phoneAreaLbl;
@@ -46,12 +45,42 @@
     self.termsAndServiceLbl.textColor=ThemeColor;
     
     if (isIndonesia) {
-        self.title=@"Daftar";
-        self.phoneNumberLbl.text=@"Nomor Telepon";
-        self.textfield.placeholder=@"Masukkan Nomor Telepon";
-        self.nextLbl.text=L(@"LANJUT");
-        self.agreeLbl.text  = @"Dengan mendaftar, saya setuju dengan";
-        self.termsAndServiceLbl.text = @"Persyaratan Layanan Kami";
+        if (self.curType == 0) {
+            self.title=@"Daftar";
+            self.phoneNumberLbl.text=@"Nomor Telepon";
+            self.textfield.placeholder=@"Masukkan Nomor Telepon";
+            self.nextLbl.text=L(@"LANJUT");
+            self.agreeLbl.text  = @"Dengan mendaftar, saya setuju dengan";
+            self.termsAndServiceLbl.text = @"Persyaratan Layanan Kami";
+        }
+        else{
+            self.title=@"Ubah Kata Sandi Pembayaran";
+            self.phoneNumberLbl.text=@"Nomor Telepon";
+            self.textfield.placeholder=@"Masukkan Nomor Telepon";
+            self.nextLbl.text=L(@"LANJUT");
+            self.agreeLbl.text  = @"Verifikasi nomor telepon anda untuk atur ulang kode sandi pembayaran";
+            self.termsAndServiceLbl.hidden = YES;
+//            self.termsAndServiceLbl.text = @"Persyaratan Layanan Kami";
+        }
+    }
+    else{
+        if (self.curType == 0) {
+            self.title=@"Sign Up";
+            self.phoneNumberLbl.text=@"Phone Number";
+            self.textfield.placeholder=@"Input Phone Number";
+            self.nextLbl.text=@"NEXT";
+            self.agreeLbl.text  = @"Signing up means that you agree with";
+            self.termsAndServiceLbl.text = @"Our Terms of Service";
+        }
+        else{
+            self.title=@"Change Payment Password";
+            self.phoneNumberLbl.text=@"Phone Number";
+            self.textfield.placeholder=@"Input Phone Number";
+            self.nextLbl.text=@"NEXT";
+            self.agreeLbl.text  = @"Verify your phone number to reset your payment password";
+            self.termsAndServiceLbl.hidden = YES;
+//            self.termsAndServiceLbl.text = @"Persyaratan Layanan Kami";
+        }
     }
     
     
@@ -62,10 +91,12 @@
     __weak __typeof(self)weakSelf = self;
     [self.bottomView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
         APVerificationCodeVC *codeVC=[[APVerificationCodeVC alloc]init];
+        codeVC.curType = self.curType;
         [weakSelf.navigationController pushViewController:codeVC animated:YES];
     }];
     [weakSelf.nextLbl addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
         APVerificationCodeVC *codeVC=[[APVerificationCodeVC alloc]init];
+        codeVC.curType = self.curType;
         [weakSelf.navigationController pushViewController:codeVC animated:YES];
     }];
     

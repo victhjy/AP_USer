@@ -8,6 +8,7 @@
 
 #import "APVerificationCodeVC.h"
 #import "APRegisterInfoVC.h"
+#import "APMyAccountVC.h"
 
 @interface APVerificationCodeVC () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *inputYourCodeLbl;
@@ -27,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.title=L(@"Sign Up");
     
     self.inputYourCodeLbl.textColor=ThemeColor;
@@ -49,10 +51,20 @@
     self.curSec = 5;
     
     if (isIndonesia) {
-        self.title=@"Daftar";
+        if (self.curType == 0) {
+            self.title=@"Daftar";
+            self.nextLabel.text=@"LANJUT";
+        }
+        else{
+            self.title=@"Ubah Kata Sandi Pembayaran";
+            self.nextLabel.text=@"LANJUT";
+        }
+        
         self.inputYourCodeLbl.text = @"Masukkan kode verifickasi anda";
         [self.resendBtn setTitle:@"Kirim Ulang Kode" forState:UIControlStateNormal];
-        self.nextLabel.text=@"LANJUT";
+        
+        
+        
         CGSize titleSize=[@"Kirim Ulang Kode" sizeWithFont:[UIFont systemFontOfSize:13] maxSize:CGSizeMake(kWidth, 30)];
         
         self.resendBtn.backgroundColor = ThemeColor;
@@ -65,12 +77,37 @@
     self.nextLabel.userInteractionEnabled=YES;
     __weak __typeof(self)weakSelf = self;
     [self.bottomView addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
-        APRegisterInfoVC *infoVC=[[APRegisterInfoVC alloc]init];
-        [weakSelf.navigationController pushViewController:infoVC animated:YES];
+        if (self.curType == 0) {
+            APRegisterInfoVC *infoVC=[[APRegisterInfoVC alloc]init];
+            [weakSelf.navigationController pushViewController:infoVC animated:YES];
+        }
+        else{
+            UIViewController *targetVc;
+            for (UIViewController * vc in self.navigationController.viewControllers) {
+                if ([vc isKindOfClass:[APMyAccountVC class]]) {
+                    targetVc = vc;
+                }
+            }
+            [MBProgressHUD showSuccess:@"Success"];
+            [self.navigationController popToViewController:targetVc animated:YES];
+        }
+        
     }];
     [self.nextLabel addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
-        APRegisterInfoVC *infoVC=[[APRegisterInfoVC alloc]init];
-        [weakSelf.navigationController pushViewController:infoVC animated:YES];
+        if (self.curType == 0) {
+            APRegisterInfoVC *infoVC=[[APRegisterInfoVC alloc]init];
+            [weakSelf.navigationController pushViewController:infoVC animated:YES];
+        }
+        else{
+            UIViewController *targetVc;
+            for (UIViewController * vc in self.navigationController.viewControllers) {
+                if ([vc isKindOfClass:[APMyAccountVC class]]) {
+                    targetVc = vc;
+                }
+            }
+            [MBProgressHUD showSuccess:@"Success"];
+            [self.navigationController popToViewController:targetVc animated:YES];
+        }
     }];
     [self.view addTapActionWithBlock:^(UIGestureRecognizer *gestureRecoginzer) {
         [weakSelf.view endEditing:YES];

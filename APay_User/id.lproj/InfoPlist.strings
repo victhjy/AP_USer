@@ -102,10 +102,16 @@
 
 "See Details" = "Lihat Rincian";
 "My Balance" = "Saldo saya";
+"Change Password" = "Ganti Kata Sandi";
 
+"Input Old Password" = "Masukkan Kata Sandi Lama";
+"Input New Password" = "Masukkan Kata Sandi Baru";
+"Confirm New Password" = "Konfirmasi Kata Sandi Baru";
 
+"Information" = "Informasi";
+"Password you input is not the same, please try again" = "Masukkan Kode Sandi Pembayaran Baru";
 
-
+"Input New Payment Password" = "Masukkan Kode Sandi Pembayaran Baru";
 
 
 

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "APUIViewController.h"
+#import "APVerificationCodeVC.h"
+
 @interface APSetPaymentPWDVC : APUIViewController
 
+@property(nonatomic, assign)  VertificateType curType;
 @end

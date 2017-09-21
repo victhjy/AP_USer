@@ -8,6 +8,9 @@
 
 #import "APMyAccountVC.h"
 #import "APAccountModel.h"
+#import "APChangePwdVC.h"
+#import "APSetPaymentPWDVC.h"
+
 @interface APMyAccountVC ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSMutableArray *tableViewArr;
@@ -92,6 +95,15 @@
 //        [tableView deselectRowAtIndexPath:indexPath animated:YES];
 //    }
 
+    if (indexPath.row == 2) {
+        APChangePwdVC *changePwdVC = [[APChangePwdVC alloc] init];
+        [self.navigationController pushViewController:changePwdVC animated:YES];
+    }
+    else if (indexPath.row == 3){
+        APSetPaymentPWDVC *changePaymentVC = [[APSetPaymentPWDVC alloc] init];
+        changePaymentVC.curType = 1;
+        [self.navigationController pushViewController:changePaymentVC animated:YES];
+    }
 }
 
 #pragma mark - Getter

@@ -102,10 +102,14 @@
 
 "See Details" = "See Details";
 "My Balance" = "My Balance";
+"Change Password" = "Change Password";
 
-
-
-
+"Input Old Password" = "Input Old Password";
+"Input New Password" = "Input New Password";
+"Confirm New Password" = "Confirm New Password";
+"Information" = "Information";
+"Password you input is not the same, please try again" = "Password you input is not the same, please try again";
+"Input New Payment Password" = "Input New Payment Password";
 
 
 

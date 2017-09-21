@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "APUIViewController.h"
+#import "APVerificationCodeVC.h"
+
+//typedef NS_ENUM(NSInteger,VertificateType){
+//    Register = 0,
+//    ChangePwd = 1
+//};
 @interface APRegisterVC : APUIViewController
 
+
+@property(nonatomic, assign) VertificateType curType;
 @end

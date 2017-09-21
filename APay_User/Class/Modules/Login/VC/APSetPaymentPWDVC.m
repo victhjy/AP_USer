@@ -10,6 +10,7 @@
 
 #import "APSetPaymentPWDVC.h"
 #import "APSetCompletedPaymentPwdVC.h"
+#import "APMyAccountVC.h"
 @interface APSetPaymentPWDVC () <UITextViewDelegate>
 @property(nonatomic, assign) NSInteger passwordCount;
 @property(nonatomic, strong) NSMutableArray *passwordItemArr;
@@ -21,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title=L(@"Sign Up");
+    
     _passwordCount = 6;
     [self createUI];
     // Do any additional setup after loading the view.
@@ -35,11 +36,19 @@
 - (void)createUI {
     self.view.backgroundColor = [UIColor whiteColor];
     UILabel *titleLbl = [[UILabel alloc]initWithFrame:CGRectMake(0, 64+20, kWidth, 20)];
-    titleLbl.text = L(@"Set Payment Password");
     titleLbl.textAlignment = 1;
     titleLbl.font = [UIFont boldSystemFontOfSize:16];
     titleLbl.textColor = ThemeColor;
     [self.view addSubview:titleLbl];
+    
+    if (self.curType == 0) {
+        titleLbl.text = L(@"Set Payment Password");
+        self.title=L(@"Sign Up");
+    }
+    else{
+        titleLbl.text = L(@"Input New Payment Password");
+        self.title=L(@"Change Payment Password");
+    }
     
     [self addPasswordView];
 }
@@ -78,6 +87,12 @@
     tipLbl.textColor =[UIColor grayColor];
     tipLbl.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:tipLbl];
+    if (self.curType == 1) {
+        tipLbl.hidden = YES;
+    }
+    else{
+        
+    }
     
     UITextView *fakerTV=[[UITextView alloc]initWithFrame:CGRectMake(leftPadding, 64+70, kWidth - 2 * leftPadding, itemH)];
     fakerTV.hidden=YES;
@@ -128,14 +143,29 @@
     NSString *willBecomeStr = [textView.text stringByReplacingCharactersInRange:range withString:text];
     if (willBecomeStr.length >= 6) {
         if (self.isPush) {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                APSetCompletedPaymentPwdVC *vc=[[APSetCompletedPaymentPwdVC alloc]init];
-                NSString *pwd= [willBecomeStr substringToIndex:6];
-                vc.pwd=pwd;
-                textView.text  = pwd;
-                [textView endEditing:YES];
-                [self.navigationController pushViewController:vc animated:YES];
-            });
+            
+            if (self.curType == 0) {
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    APSetCompletedPaymentPwdVC *vc=[[APSetCompletedPaymentPwdVC alloc]init];
+                    NSString *pwd= [willBecomeStr substringToIndex:6];
+                    vc.pwd=pwd;
+                    textView.text  = pwd;
+                    [textView endEditing:YES];
+                    [self.navigationController pushViewController:vc animated:YES];
+                });
+            }
+            else{
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    UIViewController *targetVc;
+                    for (UIViewController * vc in self.navigationController.viewControllers) {
+                        if ([vc isKindOfClass:[APMyAccountVC class]]) {
+                            targetVc = vc;
+                        }
+                    }
+                    [MBProgressHUD showSuccess:@"Success"];
+                    [self.navigationController popToViewController:targetVc animated:YES];
+                });
+            }
             self.isPush = NO;
         }
         else{

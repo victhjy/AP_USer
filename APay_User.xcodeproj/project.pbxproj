@@ -57,7 +57,11 @@
 		81A941A51F6C1D4200A97618 /* APPayResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A941A41F6C1D4200A97618 /* APPayResultVC.m */; };
 		81A941A81F6C235400A97618 /* APPayResultHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A941A71F6C235400A97618 /* APPayResultHeaderCell.m */; };
 		81A941AB1F6C26D700A97618 /* APModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A941AA1F6C26D700A97618 /* APModel.m */; };
+		81C030BB1F73FCF70038CBA7 /* UIAlertView+AlertCallBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C030BA1F73FCF70038CBA7 /* UIAlertView+AlertCallBlock.m */; };
 		81E2E8071F6243BF0029DF39 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E2E8061F6243BF0029DF39 /* NSString+Size.m */; };
+		81EE24151F72000B0096911A /* APChangePwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE24141F72000B0096911A /* APChangePwdVC.m */; };
+		81EE24181F7200520096911A /* APChangePwdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE24171F7200520096911A /* APChangePwdModel.m */; };
+		81EE241B1F720BCE0096911A /* APPwdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EE241A1F720BCE0096911A /* APPwdCell.m */; };
 		81F029CD1F6569C7006C98E3 /* APRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F029CB1F6569C7006C98E3 /* APRegisterVC.m */; };
 		81F029CE1F6569C7006C98E3 /* APRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F029CC1F6569C7006C98E3 /* APRegisterVC.xib */; };
 		81F029D61F65752B006C98E3 /* KMSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F029D11F65752B006C98E3 /* KMSwizzle.m */; };
@@ -193,9 +197,17 @@
 		81A941A71F6C235400A97618 /* APPayResultHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPayResultHeaderCell.m; sourceTree = "<group>"; };
 		81A941A91F6C26D700A97618 /* APModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APModel.h; sourceTree = "<group>"; };
 		81A941AA1F6C26D700A97618 /* APModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APModel.m; sourceTree = "<group>"; };
+		81C030B91F73FCF70038CBA7 /* UIAlertView+AlertCallBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AlertCallBlock.h"; sourceTree = "<group>"; };
+		81C030BA1F73FCF70038CBA7 /* UIAlertView+AlertCallBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AlertCallBlock.m"; sourceTree = "<group>"; };
 		81E2E8051F6243BF0029DF39 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		81E2E8061F6243BF0029DF39 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		81E2E8091F6244380029DF39 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		81EE24131F72000B0096911A /* APChangePwdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APChangePwdVC.h; sourceTree = "<group>"; };
+		81EE24141F72000B0096911A /* APChangePwdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APChangePwdVC.m; sourceTree = "<group>"; };
+		81EE24161F7200520096911A /* APChangePwdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APChangePwdModel.h; sourceTree = "<group>"; };
+		81EE24171F7200520096911A /* APChangePwdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APChangePwdModel.m; sourceTree = "<group>"; };
+		81EE24191F720BCE0096911A /* APPwdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPwdCell.h; sourceTree = "<group>"; };
+		81EE241A1F720BCE0096911A /* APPwdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPwdCell.m; sourceTree = "<group>"; };
 		81F029CA1F6569C7006C98E3 /* APRegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRegisterVC.h; sourceTree = "<group>"; };
 		81F029CB1F6569C7006C98E3 /* APRegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRegisterVC.m; sourceTree = "<group>"; };
 		81F029CC1F6569C7006C98E3 /* APRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APRegisterVC.xib; sourceTree = "<group>"; };
@@ -396,6 +408,8 @@
 			children = (
 				81F9BB111F70BCCD00377733 /* APAccountModel.h */,
 				81F9BB121F70BCCD00377733 /* APAccountModel.m */,
+				81EE24161F7200520096911A /* APChangePwdModel.h */,
+				81EE24171F7200520096911A /* APChangePwdModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +419,8 @@
 			children = (
 				81F9BB0E1F70BC2D00377733 /* APMyAccountVC.h */,
 				81F9BB0F1F70BC2D00377733 /* APMyAccountVC.m */,
+				81EE24131F72000B0096911A /* APChangePwdVC.h */,
+				81EE24141F72000B0096911A /* APChangePwdVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -412,6 +428,8 @@
 		81279AD41F6FDD8D0018268E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81EE24191F720BCE0096911A /* APPwdCell.h */,
+				81EE241A1F720BCE0096911A /* APPwdCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -707,6 +725,8 @@
 		81A2B8F21F5ED5620026D6D2 /* Categoties */ = {
 			isa = PBXGroup;
 			children = (
+				81C030B91F73FCF70038CBA7 /* UIAlertView+AlertCallBlock.h */,
+				81C030BA1F73FCF70038CBA7 /* UIAlertView+AlertCallBlock.m */,
 				81F3FFCF1F6FF2DE009A9383 /* UITableView+Add.h */,
 				81F3FFD01F6FF2DE009A9383 /* UITableView+Add.m */,
 				819ED51B1F63D15000934C8B /* UIView+Frame.h */,
@@ -1126,17 +1146,21 @@
 				81A941A51F6C1D4200A97618 /* APPayResultVC.m in Sources */,
 				81F74FF21F6CB94900A75668 /* APPayResultDetailCell.m in Sources */,
 				81279AE11F70104A0018268E /* APTransactions.m in Sources */,
+				81C030BB1F73FCF70038CBA7 /* UIAlertView+AlertCallBlock.m in Sources */,
 				81F51B0E1F6BA737004697C5 /* APUIViewController.m in Sources */,
+				81EE24151F72000B0096911A /* APChangePwdVC.m in Sources */,
 				81F3FFD11F6FF2DE009A9383 /* UITableView+Add.m in Sources */,
 				81A941AB1F6C26D700A97618 /* APModel.m in Sources */,
 				81F51B141F6BC009004697C5 /* APPayWrongPwdView.m in Sources */,
 				81F9BB0D1F70BBAA00377733 /* APSettingVC.m in Sources */,
+				81EE241B1F720BCE0096911A /* APPwdCell.m in Sources */,
 				81F08A051F63B587009B4DA9 /* APTools.m in Sources */,
 				814EF4EF1F6971EF003CDE7F /* APSetAmountVC.m in Sources */,
 				813D0B9D1F66BA7100022A10 /* APRegisterInfoVC.m in Sources */,
 				81A135271F6ABDFF00B89C3B /* APSetPaymentPWDVC.m in Sources */,
 				81A2B8BF1F5ECF7E0026D6D2 /* AppDelegate.m in Sources */,
 				81F029DC1F657860006C98E3 /* APVerificationCodeVC.m in Sources */,
+				81EE24181F7200520096911A /* APChangePwdModel.m in Sources */,
 				81F08A1B1F63BBFF009B4DA9 /* APNetManager.m in Sources */,
 				81F08A081F63B592009B4DA9 /* APHeaders.m in Sources */,
 				81F51B0A1F6B65FC004697C5 /* APTopUpBtn.m in Sources */,
